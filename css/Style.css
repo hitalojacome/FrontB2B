@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+}
+
+:root {
+    --cor-principal: #1B2C3E;
+    --cor-secundaria: #263C53;
+    --cor-websalmao: #ED5D66;
+    --cor-webazul: #5A91CD;
+    --cor-fontepreta: #000;
+    --cor-fontebranca: #FFF;
+    --fonte-principal: "Lato";
+}

@@ -1,0 +1,78 @@
+@import url(Style.css);
+
+.Acesso {
+    background-image: url(../assets/Acesso.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.WSlogo {
+    position: absolute;
+    margin-bottom: 35%;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    width: 30%;
+    height: 42%;
+    border-radius: 20px;
+}
+
+.title {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-content span {
+    color: var(--cor-websalmao);
+    font-weight: 700;
+}
+
+.botao-acessar {
+    background-color: var(--cor-websalmao);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fontebranca);
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: .5em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao-acessar:hover {
+    background-color: var(--cor-principal);
+    transition: .5s;
+}
+
+.copyright {
+    font-size: .9rem;
+    padding: 0em 1em 1em 1em;
+}
