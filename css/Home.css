@@ -73,10 +73,9 @@ aside {
     font-size: 18px;
     font-weight: 700;
     width: 50%;
-    padding: .5em;
+    padding: 0.7em;
     text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     text-align: center;
     cursor: pointer;
     transition: .3s;

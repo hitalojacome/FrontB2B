@@ -28,8 +28,8 @@
     box-sizing: border-box;
     padding: 1%;
     text-align: center;
-    width: 30%;
-    height: 42%;
+    width: 34%;
+    height: 45%;
     border-radius: 20px;
 }
 
@@ -38,18 +38,18 @@
     font-weight: 700;
 }
 
-.text-content {
+.text_content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.text-content span {
+.text_content span {
     color: var(--cor-websalmao);
     font-weight: 700;
 }
 
-.botao-acessar {
+.botao_acessar {
     background-color: var(--cor-websalmao);
     font-family: var(--fonte-principal);
     color: var(--cor-fontebranca);
@@ -57,22 +57,21 @@
     width: 40%;
     font-size: 18px;
     font-weight: 700;
-    padding: 1em 1em 1em 1em;
+    padding: 0.7em;
+    margin: 3%;
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: .5em;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
 }
 
-.botao-acessar:hover {
+.botao_acessar:hover {
     background-color: var(--cor-principal);
-    transition: .5s;
+    transform: scale(1.1);
+    transition: .4s;
 }
 
 .copyright {
     font-size: .9rem;
-    padding: 0em 1em 1em 1em;
 }
