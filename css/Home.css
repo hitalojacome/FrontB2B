@@ -1,3 +1,50 @@
 @import url(Style.css);
 @import url(Menu.css);
 
+.Home {
+    background-image: url(../assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 2em;
+    width: 63%;
+    font-size: 17px;
+}
+
+.boas_vindas {
+    background-color: var(--cor-fontebranca);
+    width: 100%;
+    padding: 2em;
+    border-radius: 12px;
+}
+
+.boas_vindas span {
+    font-weight: 700;
+}
+
+.principal {
+    background-color: var(--cor-fontebranca);
+    width: 100%;
+    border-radius: 12px;
+}
+
+.principal p {
+    padding: 2em;
+}
+
+.principal img {
+    background-color: aqua;
+}
+
+.admin {
+    color: var(--cor-websalmao);
+    font-weight: 700;
+}
