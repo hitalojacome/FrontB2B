@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Catálogo B2B</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/Home.css" class="text/css">
+    <title>Catálogo B2B</title>
 </head>
+
 <body>
     <main class="Home">
-        <aside>
+        <nav class="sidebar">
             <img class="WSLogo" src="../assets/WSLogo.png">
-            <nav class="menu">
-                <ul class="menu_home">
+            <ul class="menu">
+                <li class="menu_home">
                     <a href="Home.html" class="menu_botao home">
-                        <img class="menu_logo home" src="../assets/Home-logo.png">Home
+                        <img class="menu_logo-home" src="../assets/Home-logo.png"><p>Home</p>
                     </a>
-                </ul>
-                <ul class="menu_catalogo">
-                    <a href=* class="menu_botao catalogo">
-                        <img class="menu_logo catalogo" src="../assets/Catalogo-logo.png">Catálogos
+                </li>
+                <li class="menu_usuario">
+                    <a href="/" class="menu_botao usuario">
+                        <img class="menu_logo usuario" src="../assets/User-logo.png"><p>Usuários</p>
                     </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar catálogo</li>
-                </ul>
-                <ul class="menu_pedido">
-                    <a href=* class="menu_botao pedido">
-                        <img class="menu_logo pedido" src="../assets/Pedido-logo.png"> Pedidos
-                    </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar pedido</li>
-                </ul>
-                <ul class="menu_fornecedor">
-                    <a href=* class="menu_botao fornecedor">
-                        <img class="menu_logo fornecedor" src="../assets/Fornecedor-logo.png">Fornecedores
-                    </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar fornecedor</li>
-                </ul>
-                <ul class="menu_cliente">
-                    <a href=* class="menu_botao cliente">
-                        <img class="menu_logo cliente" src="../assets/Cliente-logo.png">Clientes
-                    </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar cliente</li>
-                </ul>
-                <ul class="menu_item">
-                    <a href=* class="menu_botao item">
-                        <img class="menu_logo item" src="../assets/Item-logo.png">Itens
-                    </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar item</li>
-                </ul>
-                <ul class="menu_usuario">
-                    <a href=* class="menu_botao usuario">
-                        <img class="menu_logo usuario" src="../assets/User-logo.png">Usuários
-                    </a>
-                    <li>Consultar</li>
-                    <li>Cadastrar usuário</li>
-                </ul>
-            </nav>
-            <a href="Acesso.html" class="botao_sair">Entrar</a>
-        </aside>
+                </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="../assets/Catalogo-logo.png"><p>Catálogos</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Cadastrar catálogo</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="../assets/Pedido-logo.png"><p>Pedidos</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Realizar pedido</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item fornecedor">
+                    <div class="menu_botao fornecedor">
+                        <img class="menu_logo fornecedor" src="../assets/Fornecedor-logo.png"><p>Fornecedores</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Cadastrar fornecedor</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item cliente">
+                    <div class="menu_botao cliente">
+                        <img class="menu_logo cliente" src="../assets/Cliente-logo.png"><p>Clientes</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Cadastrar cliente</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item categoria">
+                    <div class="menu_botao categoria">
+                        <img class="menu_logo categoria" src="../assets/Categoria-logo.png"><p>Categorias</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Cadastrar categoria</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item item">
+                    <div class="menu_botao item">
+                        <img class="menu_logo item" src="../assets/Item-logo.png"><p>Itens</p>
+                        <img class="menu_vector" src="../assets/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#">Cadastrar item</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="Acesso.html" class="botao_sair">Encerrar</a>
+        </nav class="sidebar">
+
+        <section>
+            
+        </section>
+
+        <script src="../js/home.js"></script>
     </main>
 </body>
 </html>

@@ -1,0 +1,108 @@
+@import url(Style.css);
+
+.Home {
+    background-image: url(../assets/fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    background-color: var(--cor-principal);
+}
+
+.WSLogo {
+    top: 0;
+    position: absolute;
+    width: 13%
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 47%;
+    gap: 5px;
+    margin-bottom: 10%;
+    list-style-type: none;
+}
+
+.menu_botao {
+    position: relative;
+    font-family: var(--fonte-principal);
+    color: var(--cor-fontebranca);
+    display: flex;
+    padding: .3em .3em .3em .5em;
+    border-bottom: 1px solid #000;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu_logo {
+    width: 11%;
+}
+
+.menu_logo-home {
+    width: 13%;
+}
+
+.menu_vector {
+    margin-right: .5em;
+    position: absolute;
+    right: 0;
+    transition: transform 0.5s ease;
+}
+
+.menu_item.active .menu_vector {
+    transform: rotate(-180deg); /* Rotaciona 90 graus quando a classe active é aplicada */
+}
+
+.menu_options {
+    display: none;
+}
+
+.menu_options li, .menu_options li a {
+    padding: .2em;
+    padding-left: 1em;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fontebranca);
+    text-decoration: none;
+}
+
+.botao_sair {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--cor-websalmao);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fontebranca);
+    box-sizing: border-box;
+    border: 4px solid var(--cor-websalmao);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 8%;
+    padding: 0.5em;
+    text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao_sair:hover {
+    background-color: var(--cor-principal);
+    transition: .5s;
+}
