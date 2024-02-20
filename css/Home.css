@@ -14,15 +14,15 @@ section {
     align-items: center;
     text-align: center;
     margin: auto;
-    gap: 2em;
-    width: 63%;
+    gap: 1em;
+    width: 60%;
     font-size: 17px;
 }
 
 .boas_vindas {
     background-color: var(--cor-fontebranca);
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     border-radius: 12px;
 }
 
@@ -37,7 +37,7 @@ section {
 }
 
 .principal p {
-    padding: 2em;
+    padding: 1em;
 }
 
 .principal img {
