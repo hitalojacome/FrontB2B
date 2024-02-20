@@ -99,3 +99,17 @@
     background-color: var(--cor-principal);
     transition: .5s;
 }
+
+@media screen and (min-width:1728px) {
+    .sidebar {
+        width: 13%;
+    }
+
+    .WSLogo {
+        width: 11%;
+    }
+
+    .botao_sair {
+        bottom: 2em;
+    }
+}

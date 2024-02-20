@@ -40,11 +40,26 @@ section {
     padding: 1em;
 }
 
-.principal img {
-    background-color: aqua;
-}
-
 .admin {
     color: var(--cor-websalmao);
     font-weight: 700;
+}
+
+@media screen and (min-width:1728px) {
+    section {
+        gap: 3em;
+        width: 64%;
+    }
+
+    .boas_vindas {
+        padding: 3em;
+    }
+
+    .principal p {
+        padding: 3em;
+    }
+
+    .principal img {
+        width: 50%;
+    }
 }
