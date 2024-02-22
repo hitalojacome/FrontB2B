@@ -100,28 +100,28 @@
                 <form class="formulario_dados">
                     <div>
                         <label for="razao_social">Razão Social:</label><br>
-                        <input type="text" id="razao_social" name="razao_social">
+                        <input placeholder="Razão Social" type="text" id="razao_social" name="razao_social">
                     </div>
 
                     <div>
                         <label for="nome_contato">Nome para contato:</label><br>
-                        <input type="text" id="nome_contato" name="nome_contato">
+                        <input placeholder="Nome para Contato" type="text" id="nome_contato" name="nome_contato">
                     </div>
 
                     <div class="cnpj_telefone">
                         <div class="input_cnpj">
                             <label for="cnpj">CNPJ:</label>
-                            <input type="text" id="cnpj" name="cnpj">
+                            <input placeholder="CNPJ" type="text" id="cnpj" name="cnpj">
                         </div>
                         <div class="input_telefone">
                             <label for="telefone">Telefone:</label>
-                            <input type="text" id="telefone" name="telefone">
+                            <input placeholder="Telefone" type="number" id="telefone" name="telefone">
                         </div>
                     </div>
                     
                     <div>
                         <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email">
+                        <input placeholder="Email" type="email" id="email" name="email">
                     </div>
                 </form>
                 <hr class="hree"/>
@@ -129,46 +129,74 @@
                     <div class="cep_botao">
                         <div class="input_cep">
                             <label for="cep">CEP:</label><br/>
-                            <input type="text" id="cep" name="cep">
+                            <input placeholder="CEP" type="text" id="cep" name="cep">
                         </div>
                         <button>Buscar CEP</button>
                     </div>
                     
                     <div>
                         <label for="logradouro">Logradouro:</label><br>
-                        <input type="text" id="logradouro" name="logradouro">
+                        <input placeholder="Logradouro" type="text" id="logradouro" name="logradouro">
                     </div>
                     
                     <div class="numero_complemento">
                         <div class="input_numero">
                             <label for="numero">Número:</label>
-                            <input type="text" id="numero" name="numero">
+                            <input placeholder="Numero" type="text" id="numero" name="numero">
                         </div>
                         <div class="input_complemento">
                             <label for="complemento">Complemento:</label>
-                            <input type="text" id="complemento" name="complemento">
+                            <input placeholder="Complemento" type="text" id="complemento" name="complemento">
                         </div>
                     </div>
                     
                     <div>
                         <label for="bairro">Bairro:</label><br>
-                        <input type="text" id="bairro" name="bairro">
+                        <input placeholder="Bairro" type="text" id="bairro" name="bairro">
                     </div>
 
                     <div class="cidade_uf">
                         <div class="input_cidade">
-                            <label for="cidade">Cidade:</label>
-                            <input type="text" id="cidade" name="cidade">
+                            <label for="cidade">Cidade:</label><br>
+                            <input placeholder="Cidade" type="text" id="cidade" name="cidade">
                         </div>
                         <div class="input_uf">
-                            <label for="uf">UF:</label>
-                            <input type="text" id="uf" name="uf">
+                            <label for="uf">UF:</label><br>
+                            <select value="SP" id="uf" name="uf">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </div>
                     </div>
                 </form>
             </div>
 
-            <a href="Acesso.html" class="botao_cadastrar">Cadastrar</a>
+            <input type="submit"class="botao_cadastrar"></input>
         </section>
         <script src="/js/home.js"></script>
     </main>
