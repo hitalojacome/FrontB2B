@@ -1,0 +1,9 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}

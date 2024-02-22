@@ -1,8 +1,8 @@
-@import url(Style.css);
+@import url(../Style.css);
 @import url(Menu.css);
 
-.Home {
-    background-image: url(../assets/Fundo.png);
+main {
+    background-image: url(/assets/Fundo.png);
     background-size: cover;
     display: flex;
     flex-direction: row;

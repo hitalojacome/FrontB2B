@@ -1,7 +1,7 @@
-@import url(Style.css);
+@import url(../Style.css);
 
-.Acesso {
-    background-image: url(../assets/Acesso.png);
+main {
+    background-image: url(/assets/Acesso.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
