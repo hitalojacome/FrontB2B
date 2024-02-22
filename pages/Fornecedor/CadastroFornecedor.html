@@ -91,10 +91,85 @@
             <a href="Acesso.html" class="botao_sair">Encerrar</a>
         </nav class="sidebar">
 
-        <section>
-            <div class="formulario">
-        </section>
+        <section class="formulario">
+        <div class="titulo_formulario">
+            <h1>Cadastro de Fornecedor</h1>
+            <hr/>
+        </div>
+            <div class="cadastro">
+                <form class="formulario_dados">
+                    <div>
+                        <label for="razao_social">Razão Social:</label><br>
+                        <input type="text" id="razao_social" name="razao_social">
+                    </div>
 
+                    <div>
+                        <label for="nome_contato">Nome para contato:</label><br>
+                        <input type="text" id="nome_contato" name="nome_contato">
+                    </div>
+
+                    <div class="cnpj_telefone">
+                        <div class="input_cnpj">
+                            <label for="cnpj">CNPJ:</label>
+                            <input type="text" id="cnpj" name="cnpj">
+                        </div>
+                        <div class="input_telefone">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </form>
+                <hr class="hree"/>
+                <form class="formulario_endereco">
+                    <div class="cep_botao">
+                        <div class="input_cep">
+                            <label for="cep">CEP:</label><br/>
+                            <input type="text" id="cep" name="cep">
+                        </div>
+                        <button>Buscar CEP</button>
+                    </div>
+                    
+                    <div>
+                        <label for="logradouro">Logradouro:</label><br>
+                        <input type="text" id="logradouro" name="logradouro">
+                    </div>
+                    
+                    <div class="numero_complemento">
+                        <div class="input_numero">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                        <div class="input_complemento">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="bairro">Bairro:</label><br>
+                        <input type="text" id="bairro" name="bairro">
+                    </div>
+
+                    <div class="cidade_uf">
+                        <div class="input_cidade">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="input_uf">
+                            <label for="uf">UF:</label>
+                            <input type="text" id="uf" name="uf">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <a href="Acesso.html" class="botao_cadastrar">Cadastrar</a>
+        </section>
         <script src="/js/home.js"></script>
     </main>
 </body>

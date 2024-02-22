@@ -8,6 +8,7 @@
 }
 
 :root {
+    --principal-rgba: rgba(27,44,62,0.9);
     --cor-principal: #1B2C3E;
     --cor-secundaria: #263C53;
     --cor-websalmao: #ED5D66;

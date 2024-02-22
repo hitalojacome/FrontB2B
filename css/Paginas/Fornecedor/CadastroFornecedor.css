@@ -6,4 +6,112 @@ main {
     background-size: cover;
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.formulario {
+    background-color: var(--principal-rgba);
+    height: 40em;
+    width: 60em;
+    padding: 1.5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_formulario {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_formulario h1 {
+    padding: .1em;
+}
+
+.formulario hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.cadastro {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    color: var(--cor-fontebranca);
+    justify-content: space-between;
+}
+
+.cadastro input {
+    height: 3.7em;
+    width: 28.2em;
+}
+
+.formulario_dados, .formulario_endereco {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em 2em;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.formulario_dados {
+    margin-bottom: 7em;
+}
+
+.hree {
+    height: 93%;
+}
+
+.formulario_endereco {
+    margin-bottom: 2.5em;
+}
+
+.cnpj_telefone, .cep_botao, .numero_complemento, .cidade_uf {
+    display: flex;
+    gap: 20px;
+}
+
+.cep_botao button {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    height: 3em;
+    margin-top: 5%;
+}
+
+.cnpj_telefone input, .cep_botao input, .numero_complemento input, .cidade_uf input {
+    width: 13.4em;
+}
+
+.botao_cadastrar{
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 15%;
 }

@@ -79,9 +79,7 @@
     position: absolute;
     bottom: 0;
     background-color: var(--cor-websalmao);
-    font-family: var(--fonte-principal);
     color: var(--cor-fontebranca);
-    box-sizing: border-box;
     border: 4px solid var(--cor-websalmao);
     border-radius: 12px;
     font-size: 18px;
