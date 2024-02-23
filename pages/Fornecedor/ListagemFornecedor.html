@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/css/Paginas/Fornecedor/ListagemFornecedor.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
+    <!--DataTables-->
+    <link rel="stylesheet" href="/css/datatables.css" class="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
 
     <title>Catálogo B2B</title>
 </head>
@@ -98,28 +102,105 @@
             <hr/>
         </div>
         <div class="listagem_tabela">
-            <table id="myTable" class="display">
+            <table id="listar_fornecedor" class="display" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
+                        <th>CNPJ</th>
+                        <th>Fornecedor</th>
+                        <th>Status</th>
+                        <th>Detalhes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Row 1 Data 1</td>
-                        <td>Row 1 Data 2</td>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Row 2 Data 1</td>
-                        <td>Row 2 Data 2</td>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Inativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Inativo</td>
+                        <td>
+                            <a class="botao_expandir">Expandir</a>
+                        </td>
                     </tr>
                 </tbody>
+
             </table>
         </div>
             <input value="Cadastrar" type="submit"class="botao_cadastrar"></input>
         </section>
-        <script src="/js/home.js"></script>
+
+        <script src="/js/home.js"></script> <!--Efeito MENU-->
+
+        <script> // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: true,
+                lengthMenu: [6],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    infoEmpty: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
+
     </main>
 </body>
 </html>
