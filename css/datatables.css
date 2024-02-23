@@ -600,13 +600,19 @@ table.dataTable thead th {
     border-top: 2px solid var(--cor-fontebranca);
     color: var(--cor-fontebranca);
     font-size: 20px;
-  }
+}
   
-  /* Centralizar registros (td) */
-  table.dataTable tbody td {
+/* Centralizar registros (td) */
+table.dataTable tbody td {
     text-align: center;
     color: var(--cor-fontebranca);
-  }
+}
+
+table {
+    border-right: 2px solid var(--cor-fontebranca);
+    border-left: 2px solid var(--cor-fontebranca);
+    border-bottom: 2px solid var(--cor-fontebranca);
+}
 
 
 
@@ -635,6 +641,15 @@ table.dataTable thead th {
   }
 }
 
+table label {
+    color: var(--cor-fontebranca);
+    font-weight: 700;
+}
+
+.dt-info {
+    color: var(--cor-fontebranca);
+}
+
 table.dataTable thead th,
 table.dataTable thead td{
   text-align: center;
@@ -659,25 +674,21 @@ table.dataTable > thead > tr > td {
 }
 
 /*registros*/
-table.dataTable > tbody > tr {
-  background-color: #375473;
+table.dataTable > tbody > tr:nth-child(odd) {
+  background-color: var(--cor-secundaria);
 }
+
+
 
 table.dataTable > tbody > tr > th,
 table.dataTable > tbody > tr > td {
-  padding: 9.6px 10px;
+  padding: 10px 10px;
 }
 table.dataTable.row-border > tbody > tr > *, table.dataTable.display > tbody > tr > * {
   border-top: 2px solid #fff;
 }
 table.dataTable.row-border > tbody > tr:first-child > *, table.dataTable.display > tbody > tr:first-child > * {
   border-top: none;
-}
-
-/* hover registro */
-table.dataTable.hover > tbody > tr:hover > *, table.dataTable.display > tbody > tr:hover > * {
-  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.035);
-  box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-hover), 0.035);
 }
 
 /*
@@ -694,6 +705,7 @@ div.dt-container div.dt-layout-row {
   display: table;
   clear: both;
   width: 100%;
+  color: var(--cor-fontebranca);
 }
 
 div.dt-container div.dt-layout-cell {
@@ -727,18 +739,14 @@ div.dt-container .dt-paging .dt-paging-button {
   border: 1px solid transparent;
   border-radius: 8px;
   background: transparent;
+  color: var(--cor-fontebranca) !important;
 }
 div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover {
-  color: inherit !important;
+  color: var(--cor-fontebranca) !important;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.05);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230, 230, 230, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); /* IE10+ */
-  background: -o-linear-gradient(top, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); /* W3C */
+  background-color: var(--cor-websalmao);
 }
+
 div.dt-container .dt-paging .dt-paging-button.disabled, div.dt-container .dt-paging .dt-paging-button.disabled:hover, div.dt-container .dt-paging .dt-paging-button.disabled:active {
   cursor: default;
   color: var(--cor-fontebranca) !important;
@@ -747,25 +755,16 @@ div.dt-container .dt-paging .dt-paging-button.disabled, div.dt-container .dt-pag
   box-shadow: none;
 }
 div.dt-container .dt-paging .dt-paging-button:hover {
-color: var(--cor-fontebranca);
+  color: var(--cor-fontebranca);
+  background-color: var(--cor-secundaria);
   border: 1px solid #111;
-  background-color: #111;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #585858 0%, #111 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #585858 0%, #111 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, #585858 0%, #111 100%); /* IE10+ */
-  background: -o-linear-gradient(top, #585858 0%, #111 100%); /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #585858 0%, #111 100%); /* W3C */
 }
+
+
+
 div.dt-container .dt-paging .dt-paging-button:active {
-  outline: none;
-  background-color: #0c0c0c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b2b2b), color-stop(100%, #0c0c0c)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%); /* IE10+ */
-  background: -o-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%); /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #2b2b2b 0%, #0c0c0c 100%); /* W3C */
+  border: 1px solid var(--cor-fontebranca);
+  background-color: var(--cor-secundaria);
   box-shadow: inset 0 0 3px #111;
 }
 
