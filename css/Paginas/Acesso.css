@@ -74,3 +74,13 @@ main {
 .copyright {
     font-size: .9rem;
 }
+
+@media screen and (min-width:1728px) {
+    .WSlogo {
+        width: 10%;
+    }
+    .principal {
+        width: 29%;
+        height: 33%;
+    }
+}

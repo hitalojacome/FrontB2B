@@ -135,3 +135,27 @@ main {
     padding: 0.5em;
     width: 15%;
 }
+
+@media screen and (min-width:1728px) {
+    .formulario {
+        width: 65em;
+        height: 45em;
+    }
+
+    .formulario hr {
+        border-width: .2em;
+    }
+
+    .cep_botao button {
+        width: 40%;
+        margin-left: 7%;
+    }
+
+    .cep_botao input {
+        width: 14em;;
+    }
+
+    .cadastro select {
+        width: 10.5em;
+    }
+}
