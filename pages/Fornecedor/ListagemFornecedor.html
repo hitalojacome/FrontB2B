@@ -6,8 +6,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Home.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Fornecedor/ListagemFornecedor.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
 
     <title>Catálogo B2B</title>
 </head>
@@ -18,7 +19,7 @@
             <img class="WSLogo" src="/assets/WSLogo.png">
             <ul class="menu">
                 <li class="menu_home">
-                    <a href="Home.html" class="menu_botao home">
+                    <a href="../Home.html" class="menu_botao home">
                         <img class="menu_logo-home" src="/assets/menu/Home-logo.png"><p>Home</p>
                     </a>
                 </li>
@@ -53,8 +54,8 @@
                         <img class="menu_vector" src="/assets/menu/vector.png">
                     </div>
                     <ul class="menu_options">
-                        <li><a href="./Fornecedor/ListagemFornecedor.html">Consultar</a></li>
-                        <li><a href="./Fornecedor/CadastroFornecedor.html">Cadastrar fornecedor</a></li>
+                        <li><a href="ListagemFornecedor.html">Consultar</a></li>
+                        <li><a href="CadastroFornecedor.html">Cadastrar fornecedor</a></li>
                     </ul>
                 </li>
                 <li class="menu_item cliente">
@@ -91,20 +92,33 @@
             <a href="Acesso.html" class="botao_sair">Encerrar</a>
         </nav class="sidebar">
 
-        <section>
-            <div class="boas_vindas">
-                <p>
-                    Olá <span>user name</span> seja bem vindo(a) ao <span class="admin">Admin</span> de <span>Catálogo B2B</span>!
-                </p>
-            </div>
-            <div class="principal">
-                <p>
-                    Escolha uma das opções no <span class="admin">menu lateral</span>
-                </p>
-                <img src="/assets/boasvindas.png">
-            </div>
+        <section class="listagem">
+        <div class="titulo_listagem">
+            <h1>Fornecedores</h1>
+            <hr/>
+        </div>
+        <div class="listagem_tabela">
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1 Data 1</td>
+                        <td>Row 1 Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Data 1</td>
+                        <td>Row 2 Data 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <input value="Cadastrar" type="submit"class="botao_cadastrar"></input>
         </section>
-
         <script src="/js/home.js"></script>
     </main>
 </body>
