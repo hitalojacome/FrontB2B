@@ -11,8 +11,8 @@ main {
 
 .formulario {
     background-color: var(--principal-rgba);
-    height: 40em;
-    width: 60em;
+    height: 35em;
+    width: 55em;
     padding: 1.5em 2em;
     align-items: center;
     margin: auto;
@@ -75,13 +75,13 @@ main {
 .cadastro input {
     background-color: var(--cor-fundo);
     width: 100%;
-    height: 3.7em;
+    height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
 }
 
 .formulario_dados {
-    margin-bottom: 6.2em;
+    margin-bottom: 5.8em;
     padding: 0em 1em 0em 0em;
 }
 
@@ -90,7 +90,7 @@ main {
 }
 
 .formulario_endereco {
-    margin-bottom: .8em;
+    margin-bottom: .4em;
     padding: 0em 0em 0em 1em;
 }
 
@@ -105,18 +105,18 @@ main {
     text-align: center;
     cursor: pointer;
     transition: .3s;
-    height: 3em;
+    height: 2.6em;
     margin-top: 5%;
 }
 
 .cidade_uf input {
-    width: 17.4em;
+    width: 14.9em;
 }
 
 .cadastro select {
     background-color: var(--cor-fundo);
     width: 8em;
-    height: 3.7em;
+    height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
 }
