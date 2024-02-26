@@ -46,28 +46,6 @@ main {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     width: 50em;
-    height: 25em;
+    height: 37em;
     margin-top: 1em;
-}
-
-.botao_cadastrar {
-    background-color: var(--cor-websalmao);
-    color: var(--cor-fontebranca);
-    border-color: var(--cor-websalmao);
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    transition: .3s;
-    text-decoration: none;
-    padding: 0.5em;
-    width: 15%;
-    margin-top: .6em;
-}
-
-.botao_cadastrar:hover{
-    background-color: var(--cor-webazul);
-    border-color: var(--cor-webazul);
-    transition: .4s;
 }
