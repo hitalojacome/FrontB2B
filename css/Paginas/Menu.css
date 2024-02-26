@@ -63,6 +63,7 @@
 
 .menu_options {
     display: none;
+    text-decoration: none;
 }
 
 .menu_options li, .menu_options li a {
@@ -72,6 +73,10 @@
     border-bottom: 1px solid #000;
     background-color: var(--cor-secundaria);
     color: var(--cor-fontebranca);
+    text-decoration: none;
+}
+
+.menu_options a  {
     text-decoration: none;
 }
 

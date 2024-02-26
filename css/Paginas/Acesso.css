@@ -67,7 +67,7 @@ main {
 }
 
 .botao_acessar:hover {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-webazul);
     transition: .4s;
 }
 

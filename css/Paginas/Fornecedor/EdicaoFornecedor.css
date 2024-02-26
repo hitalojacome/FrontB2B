@@ -52,3 +52,11 @@ main {
     border-style: solid;
     border-radius: 5px;
 }
+
+.edicao_fornecedor {
+    background-color: var(--cor-principal);
+    border: 3px solid #fff;
+    border-radius: 20px;
+    width: 50em;
+    height: 27em;
+}

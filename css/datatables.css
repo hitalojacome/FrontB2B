@@ -99,6 +99,7 @@ div.dt-container div.dt-layout-cell:empty {
 
 /* Estilo de pesquisa */
 .dt-search {
+  margin-top: .3em;
   padding-right: 2em;
 }
 
