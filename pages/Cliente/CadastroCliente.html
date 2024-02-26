@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/Paginas/Cliente/CadastroCliente.css" class="text/css">
+    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
+    <title>Catálogo B2B</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <img class="WSLogo" src="/assets/WSLogo.png">
+            <ul class="menu">
+                <li class="menu_home">
+                    <a href="../Home.html" class="menu_botao home">
+                        <img class="menu_logo-home" src="/assets/menu/Home-logo.png"><p>Home</p>
+                    </a>
+                </li>
+                <li class="menu_usuario">
+                    <a href="/" class="menu_botao usuario">
+                        <img class="menu_logo usuario" src="/assets/menu/User-logo.png"><p>Usuários</p>
+                    </a>
+                </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png"><p>Catálogos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Cadastrar catálogo</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png"><p>Pedidos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Realizar pedido</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item fornecedor">
+                    <div class="menu_botao fornecedor">
+                        <img class="menu_logo fornecedor" src="/assets/menu/Fornecedor-logo.png"><p>Fornecedores</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Fornecedor/ListagemFornecedor.html"><li>Consultar</li></a>
+                        <a href="/pages/Fornecedor/CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item cliente">
+                    <div class="menu_botao cliente">
+                        <img class="menu_logo cliente" src="/assets/menu/Cliente-logo.png"><p>Clientes</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="ListagemCliente.html"><li>Consultar</li></a>
+                        <a href="CadastroCliente.html"><li>Cadastrar cliente</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item categoria">
+                    <div class="menu_botao categoria">
+                        <img class="menu_logo categoria" src="/assets/menu/Categoria-logo.png"><p>Categorias</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Cadastrar categoria</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item item">
+                    <div class="menu_botao item">
+                        <img class="menu_logo item" src="/assets/menu/Item-logo.png"><p>Itens</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Cadastrar item</li></a>
+                    </ul>
+                </li>
+            </ul>
+            <a href="../Acesso.html" class="botao_sair">Encerrar</a>
+        </nav class="sidebar">
+
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <h1>Cadastro de Cliente</h1>
+                <hr/>
+            </div>
+            <div class="cadastro">
+                <form class="formulario_dados">
+                    <div>
+                        <label for="razao_social">Razão Social:</label><br>
+                        <input placeholder="Razão Social" type="text" id="razao_social" name="razao_social">
+                    </div>
+
+                    <div>
+                        <label for="nome_contato">Nome para contato:</label><br>
+                        <input placeholder="Nome para Contato" type="text" id="nome_contato" name="nome_contato">
+                    </div>
+
+                    <div class="cnpj_telefone">
+                        <div class="input_cnpj">
+                            <label for="cnpj">CNPJ:</label>
+                            <input placeholder="CNPJ" type="text" id="cnpj" name="cnpj">
+                        </div>
+                        <div class="input_telefone">
+                            <label for="telefone">Telefone:</label>
+                            <input placeholder="Telefone" type="text" id="telefone" name="telefone">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input placeholder="Email" type="email" id="email" name="email">
+                    </div>
+                </form>
+                <hr class="hree"/>
+                <form class="formulario_endereco">
+                    <div class="cep_botao">
+                        <div class="input_cep">
+                            <label for="cep">CEP:</label><br/>
+                            <input placeholder="CEP" type="text" id="cep" name="cep">
+                        </div>
+                        <button>Buscar CEP</button>
+                    </div>
+                    
+                    <div>
+                        <label for="logradouro">Logradouro:</label><br>
+                        <input placeholder="Logradouro" type="text" id="logradouro" name="logradouro">
+                    </div>
+                    
+                    <div class="numero_complemento">
+                        <div class="input_numero">
+                            <label for="numero">Número:</label>
+                            <input placeholder="Numero" type="text" id="numero" name="numero">
+                        </div>
+                        <div class="input_complemento">
+                            <label for="complemento">Complemento:</label>
+                            <input placeholder="Complemento" type="text" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="bairro">Bairro:</label><br>
+                        <input placeholder="Bairro" type="text" id="bairro" name="bairro">
+                    </div>
+
+                    <div class="cidade_uf">
+                        <div class="input_cidade">
+                            <label for="cidade">Cidade:</label><br>
+                            <input placeholder="Cidade" type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="input_uf">
+                            <label for="uf">UF:</label><br>
+                            <select value="SP" id="uf" name="uf">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <input value="Cadastrar" type="submit"class="botao_cadastrar"></input>
+        </section>
+        <script src="/js/home.js"></script>
+    </main>
+</body>
+</html>

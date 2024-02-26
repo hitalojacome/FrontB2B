@@ -1,0 +1,173 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.formulario {
+    background-color: var(--principal-rgba);
+    height: 35em;
+    width: 55em;
+    padding: 1.5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_formulario {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_formulario h1 {
+    padding: .1em;
+}
+
+.formulario hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.cadastro {
+    color: var(--cor-fontebranca);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario_dados, .formulario_endereco {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.cadastro label {
+    padding-left: .4em;
+}
+
+.cnpj_telefone, .cep_botao, .numero_complemento, .cidade_uf {
+    display: flex;
+    gap: 20px;
+}
+
+.cnpj_telefone input, .cep_botao input, .numero_complemento input {
+    width: 12.7em;
+}
+
+.cadastro input {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+.formulario_dados {
+    margin-bottom: 5.8em;
+    padding: 0em 1em 0em 0em;
+}
+
+.hree {
+    height: 93%;
+}
+
+.formulario_endereco {
+    margin-bottom: .4em;
+    padding: 0em 0em 0em 1em;
+}
+
+.cep_botao button {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    height: 2.6em;
+    margin-top: 5%;
+}
+
+.cep_botao button:hover {
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+.cidade_uf input {
+    width: 14.9em;
+}
+
+.cadastro select {
+    background-color: var(--cor-fundo);
+    width: 8em;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+.botao_cadastrar {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 15%;
+}
+
+.botao_cadastrar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .formulario {
+        width: 65em;
+        height: 45em;
+    }
+
+    .formulario hr {
+        border-width: .2em;
+    }
+
+    .cep_botao button {
+        width: 40%;
+        margin-left: 7%;
+    }
+
+    .cep_botao input {
+        width: 14em;;
+    }
+
+    .cadastro select {
+        width: 10.5em;
+    }
+}
