@@ -91,6 +91,10 @@
             <a href="../Acesso.html" class="botao_sair">Encerrar</a>
         </nav class="sidebar">
 
+        <div class="botao_voltar">
+        <a href="ListagemFornecedor.html"><img  src="/assets/icons/seta-voltar.png"></a>
+        </div>
+
         <section class="edicao">
             <div class="titulo_edicao">
                 <div>
@@ -107,12 +111,22 @@
                             <input placeholder="Razão Social" type="text" id="razao_social" name="razao_social">
                         </div>
                         <div>
-                            <label for="nome_contato">Nome para contato:</label>
+                            <label for="nome_contato">Contato:</label>
                             <input placeholder="Nome para Contato" type="text" id="nome_contato" name="nome_contato">
                         </div>
                         <div>
                             <label for="botao_ativo">Ativo:</label>
-                            <input type="checkbox" id="botao_ativo" name="botao_ativo">
+                            <div class="toggle-wrapper">
+                                <label class="switch">
+                                  <input type="checkbox" class="hidden-toggle" id="botao_ativo" name="botao_ativo"/>
+                                  <div class="slider">
+                                    <div class="button">
+                                        <img class="toggle-icon" src="/assets/icons/ativo.png">
+                                        <img class="off-icon" src="/assets/icons/Inativo.png">
+                                    </div>
+                                  </div>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="formulario_dados-DOIS">
@@ -128,9 +142,75 @@
                 </form>
                 <hr/>
                 <form class="formulario_endereco">
-
+                    <div class="formulario_endereco-UM">
+                        <div class="cep_botao">
+                            <div class="input_cep">
+                                <label for="cep">CEP:</label>
+                                <input placeholder="CEP" type="text" id="cep" name="cep">
+                            </div>
+                            <button>Buscar CEP</button>
+                        </div>
+                        <div>
+                            <label for="logradouro">Logradouro:</label>
+                            <input placeholder="Logradouro" type="text" id="logradouro" name="logradouro">
+                        </div>
+                        <div class="numero">
+                            <label for="numero">Número:</label>
+                            <input placeholder="Numero" type="text" id="numero" name="numero">
+                        </div>
+                    </div>
+                    <div class="formulario_endereco-DOIS">
+                        <div class="complemento">
+                            <label for="complemento">Complemento:</label>
+                            <input placeholder="Complemento" type="text" id="complemento" name="complemento">
+                        </div>
+                        <div>
+                            <label for="bairro">Bairro:</label>
+                            <input placeholder="Bairro" type="text" id="bairro" name="bairro">
+                        </div>
+                        <div class="cidade_uf">
+                        <div class="input_cidade">
+                            <label for="cidade">Cidade:</label>
+                            <input placeholder="Cidade" type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="input_uf">
+                            <label for="uf">UF:</label>
+                            <select value="SP" id="uf" name="uf">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                    </div>
                 </form>
             </div>
+                </form>
+            </div>
+            <input value="Salvar" type="submit"class="botao_cadastrar"></input>
         </section>
         <script src="/js/home.js"></script>
     </main>

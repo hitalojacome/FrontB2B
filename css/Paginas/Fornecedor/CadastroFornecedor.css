@@ -59,6 +59,10 @@ main {
     gap: 12px;
 }
 
+.cadastro label {
+    padding-left: .4em;
+}
+
 .cnpj_telefone, .cep_botao, .numero_complemento, .cidade_uf {
     display: flex;
     gap: 20px;
@@ -66,10 +70,6 @@ main {
 
 .cnpj_telefone input, .cep_botao input, .numero_complemento input {
     width: 12.7em;
-}
-
-.cadastro label {
-    padding-left: .4em;
 }
 
 .cadastro input {
@@ -136,7 +136,7 @@ main {
     font-weight: 700;
     text-align: center;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
     text-decoration: none;
     padding: 0.5em;
     width: 15%;
