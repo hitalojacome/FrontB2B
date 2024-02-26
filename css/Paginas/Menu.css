@@ -67,7 +67,7 @@
 
 .menu_options li, .menu_options li a {
     padding: .2em;
-    padding-left: 1em;
+    padding-left: 2em;
     box-sizing: border-box;
     border-bottom: 1px solid #000;
     background-color: var(--cor-secundaria);
