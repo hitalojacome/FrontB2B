@@ -1,0 +1,54 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edicao {
+    background-color: var(--principal-rgba);
+    height: 35em;
+    width: 55em;
+    padding: 1.5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_edicao {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_edicao div {
+    width: 56%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.titulo_edicao h2 {
+    padding-right: 5em;
+}
+
+.titulo_edicao h1 {
+    padding: .1em;
+}
+
+.edicao hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
