@@ -157,7 +157,10 @@ main {
 /* Ícone do botão OFF */
 .slider .button img.off-icon {
     content: url("/assets/icons/Inativo.png");
-    margin-right: .1em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -80%);
 }
 
 .switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {

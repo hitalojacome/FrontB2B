@@ -153,14 +153,17 @@ main {
 /* Ícone do botão OFF */
 .slider .button img.off-icon {
     content: url("/assets/icons/Inativo.png");
-    margin-right: .1em;
-}
-
-.switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
-    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -80%);
 }
 
 .switch > .hidden-toggle ~ .slider > .button img.off-icon {
+    display: none;
+}
+
+.switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
     display: none;
 }
 .switch > .hidden-toggle:checked ~ .slider > .button img.off-icon {
