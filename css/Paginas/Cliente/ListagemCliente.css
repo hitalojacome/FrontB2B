@@ -49,3 +49,15 @@ main {
     height: 37em;
     margin-top: 1em;
 }
+
+@media screen and (min-width:1728px) {
+    .listagem {
+        width: 65em;
+        height: 45em;
+    }
+
+    .listagem_tabela {
+        width: 60em;
+        height: 40em;
+    }
+}

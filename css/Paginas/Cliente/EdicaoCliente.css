@@ -11,8 +11,8 @@ main {
 
 .botao_voltar {
     position: absolute;
-    margin-bottom: 40em;
-    margin-left: 18em;
+    margin-bottom: 35em;
+    margin-left: 15em;
     transition: .4s;
 }
 
@@ -65,7 +65,7 @@ main {
     border-radius: 5px;
 }
 
-.edicao_fornecedor {
+.edicao_cliente {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     border-radius: 20px;
@@ -157,7 +157,7 @@ main {
 /* Ícone do botão OFF */
 .slider .button img.off-icon {
     content: url("/assets/icons/Inativo.png");
-    margin-right: .4em;
+    margin-right: .1em;
 }
 
 .switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
@@ -189,7 +189,7 @@ main {
     align-items: center;
 }
 
-.edicao_fornecedor input {
+.edicao_cliente input {
     background-color: var(--cor-fundo);
     height: 2.8em;
     font-size: 16px;
@@ -273,4 +273,60 @@ width: 14em;
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .botao_voltar {
+        margin-bottom: 53em;
+        margin-left: 23em;
+    }
+
+    .edicao {
+        width: 65em;
+        height: 45em;
+    }
+
+    .titulo_edicao h3 {
+        padding-right: 6em;
+    }
+
+    .edicao_cliente {
+        width: 60em;
+        height: 35em;
+    }
+
+    .formulario_dados-UM,
+    .formulario_endereco-UM,
+    .formulario_endereco-DOIS {
+        gap: 2em;
+        padding-top: 2em;
+        width: 44%
+    }
+
+    .formulario_dados-DOIS {
+        gap: 2em;
+        padding-top: 2em;
+        width: 44%
+    }
+
+    .cep_botao button {
+        width: 33%;
+    }
+
+    #cep {
+        margin-left: 7em;
+    }
+
+    #complemento {
+        width: 17.6em;
+    }
+
+    #bairro  {
+        width: 17.6em;
+    }
+
+    #cidade {
+        width: 11em;
+        margin-left: 5em;
+    }
 }

@@ -158,16 +158,25 @@ main {
         border-width: .2em;
     }
 
+    .titulo_formulario hr {
+        border-width: .1em;
+    }
+
+    .cadastro input {
+        height: 4em;
+    }
+
     .cep_botao button {
         width: 40%;
         margin-left: 7%;
     }
 
     .cep_botao input {
-        width: 14em;;
+        width: 14em;
     }
 
     .cadastro select {
-        width: 10.5em;
+        width: 13em;
+        height: 4em;
     }
 }

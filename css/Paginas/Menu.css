@@ -111,6 +111,11 @@
         width: 11%;
     }
 
+    .menu_options li, .menu_options li a {
+        padding: .4em;
+        padding-left: 2em;
+    }
+
     .botao_sair {
         bottom: 2em;
     }
