@@ -63,7 +63,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: .4s;
-    margin-top: 1em;
+    margin-top: .1em;
 }
 
 .botao_acessar:hover {
