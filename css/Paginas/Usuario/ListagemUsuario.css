@@ -1,0 +1,77 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+@import url(/css/datatables.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listagem {
+    background-color: var(--principal-rgba);
+    height: 35em;
+    width: 55em;
+    padding: 1.5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_listagem {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_listagem h1 {
+    padding: .1em;
+}
+
+.listagem hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.listagem_tabela {
+    background-color: var(--cor-principal);
+    border: 3px solid #fff;
+    width: 50em;
+    height: 37em;
+    margin-top: 1em;
+}
+
+table a {
+    border: none;
+}
+
+/*parei aqui*/
+
+table a:hover {
+    background-color: none;
+}
+
+table img {
+    width: 15%;
+} 
+
+@media screen and (min-width:1728px) {
+    .listagem {
+        width: 65em;
+        height: 45em;
+    }
+
+    .listagem_tabela {
+        width: 60em;
+        height: 40em;
+    }
+}
