@@ -6,7 +6,6 @@
 table {
   margin: auto;
   border-spacing: 0;
-
   border-bottom: 2px solid var(--cor-fontebranca);
 }
 
@@ -19,7 +18,7 @@ table.dataTable thead th,
 table.dataTable tbody td {
   text-align: center;
   color: var(--cor-fontebranca);
-  padding: 10px;
+  padding: 16px;
 }
 
 /* Estilo das linhas ímpares da tabela */
