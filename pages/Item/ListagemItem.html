@@ -57,8 +57,8 @@
                         <img class="menu_vector" src="/assets/menu/vector.png">
                     </div>
                     <ul class="menu_options">
-                        <a href="ListagemFornecedor.html"><li>Consultar</li></a>
-                        <a href="CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
+                        <a href="/pages/Fornecedor/ListagemFornecedor.html"><li>Consultar</li></a>
+                        <a href="/pages/Fornecedor/CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
                     </ul>
                 </li>
                 <li class="menu_item cliente">
@@ -87,8 +87,8 @@
                         <img class="menu_vector" src="/assets/menu/vector.png">
                     </div>
                     <ul class="menu_options">
-                        <a href="/pages/Item/ListagemItem.html"><li>Consultar</li></a>
-                        <a href="/pages/Item/CadastroItem.html"><li>Cadastrar item</li></a>
+                        <a href="ListagemItem.html"><li>Consultar</li></a>
+                        <a href="CadastroItem.html"><li>Cadastrar item</li></a>
                     </ul>
                 </li>
             </ul>
@@ -97,74 +97,82 @@
 
         <section class="listagem">
         <div class="titulo_listagem">
-            <h1>Fornecedores</h1>
+            <h1>Itens</h1>
             <hr/>
         </div>
         <div class="listagem_tabela">
             <table id="listar_fornecedor" class="display" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th>CNPJ</th>
+                        <th>Tipo</th>
+                        <th>Nome</th>
                         <th>Fornecedor</th>
-                        <th>Status</th>
+                        <th>Categoria</th>
                         <th>Detalhes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>11.346.678/0190-00</td>
+                        <td>Produto</td>
+                        <td>Headset Microsoft</td>
                         <td>Empresa LTDA</td>
-                        <td>Ativo</td>
+                        <td>Eletrônicos</td>
                         <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>12.346.678/0190-00</td>
+                        <td>Produto</td>
+                        <td>Teclado Microsoft</td>
+                        <td>Empresa LTDA</td>
+                        <td>Eletrônicos</td>
+                        <td>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Serviço</td>
+                        <td>Formatação SO</td>
+                        <td>Empresa LTDA</td>
+                        <td>Eletrônicos</td>
+                        <td>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Serviço</td>
+                        <td>Data Integration</td>
                         <td>NexusData Labs</td>
-                        <td>Inativo</td>
+                        <td>Eletrônicos</td>
                         <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>13.346.678/0190-00</td>
-                        <td>EcoSync Ventures</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>14.346.678/0190-00</td>
-                        <td>QuantumCraft Innovations</td>
-                        <td>Inativo</td>
-                        <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>15.346.678/0190-00</td>
+                        <td>Produto</td>
+                        <td>Headset Microsoft</td>
                         <td>BioHarbor Dynamics</td>
-                        <td>Ativo</td>
+                        <td>Eletrônicos</td>
                         <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>16.346.678/0190-00</td>
+                        <td>Serviço</td>
+                        <td>Processador i5-10500</td>
                         <td>TechInnovate Solutions</td>
-                        <td>Ativo</td>
+                        <td>Hardware</td>
                         <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>17.346.678/0190-00</td>
-                        <td>SolarEra Technologies</td>
-                        <td>Inativo</td>
+                        <td>Produto</td>
+                        <td>HD 5TB</td>
+                        <td>TechInnovate Solutions</td>
+                        <td>Hardware</td>
                         <td>
-                            <a href="/pages/Fornecedor/EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
                         </td>
                     </tr>
                 </tbody>
@@ -178,7 +186,7 @@
             // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
                 searching: true,
-                lengthMenu: [7],
+                lengthMenu: [5],
                 paging: true,
                 ordering: false,
                 language: {
