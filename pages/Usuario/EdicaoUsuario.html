@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="/css/Paginas/Item/ListagemItem.css" class="text/css">
-    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
-    <!--DataTables-->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+    <link rel="stylesheet" href="/css/Paginas/Usuario/EdicaoUsuario.css" class="text/css">
+    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <title>Catálogo B2B</title>
 </head>
@@ -27,7 +23,7 @@
                     </a>
                 </li>
                 <li class="menu_usuario">
-                    <a href="/pages/Usuario/ListagemUsuario.html" class="menu_botao usuario">
+                    <a href="ListagemUsuario.html" class="menu_botao usuario">
                         <img class="menu_logo usuario" src="/assets/menu/User-logo.png"><p>Usuários</p>
                     </a>
                 </li>
@@ -95,111 +91,71 @@
             <a href="../Acesso.html" class="botao_sair">Encerrar</a>
         </nav class="sidebar">
 
-        <section class="listagem">
-        <div class="titulo_listagem">
-            <h1>Itens</h1>
-            <hr/>
-        </div>
-        <div class="listagem_tabela">
-            <table id="listar_fornecedor" class="display" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Nome</th>
-                        <th>Fornecedor</th>
-                        <th>Categoria</th>
-                        <th>Detalhes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Produto</td>
-                        <td>Headset Microsoft</td>
-                        <td>Empresa LTDA</td>
-                        <td>Eletrônicos</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Produto</td>
-                        <td>Teclado Microsoft</td>
-                        <td>Empresa LTDA</td>
-                        <td>Eletrônicos</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço</td>
-                        <td>Formatação SO</td>
-                        <td>Empresa LTDA</td>
-                        <td>Eletrônicos</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço</td>
-                        <td>Data Integration</td>
-                        <td>NexusData Labs</td>
-                        <td>Eletrônicos</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Produto</td>
-                        <td>Headset Microsoft</td>
-                        <td>BioHarbor Dynamics</td>
-                        <td>Eletrônicos</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço</td>
-                        <td>Processador i5-10500</td>
-                        <td>TechInnovate Solutions</td>
-                        <td>Hardware</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Produto</td>
-                        <td>HD 5TB</td>
-                        <td>TechInnovate Solutions</td>
-                        <td>Hardware</td>
-                        <td>
-                            <a href="EdicaoItem.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="botao_voltar">
+            <a href="ListagemFornecedor.html"><img  src="/assets/icons/seta-voltar.png"></a>
+            </div>
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <div class="info">
+                    <div class="titulo_item">
+                        <h1>Item: </h1>
+                        <h3>Headset Microsoft</h2>
+                    </div>
+                    <div class="titulo_fornecedor">
+                        <h1>Fornecedor: </h1>
+                        <h3>Empresa LTDA</h2>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+            <div class="cadastro">
+                <form class="formulario_dados">
+                    <div class="cnpj_view">
+                        <div>
+                            <label for="cnpj_fornecedor">CNPJ do fornecedor:</label><br>
+                            <input placeholder="CNPJ" type="text" id="cnpj_fornecedor" name="cnpj_fornecedor">
+                        </div>
+                        <p class="razao_social"><u>- Empresa LTDA</u></p>
+                    </div>
+
+                    <div>
+                        <label for="nome_contato">Nome do item:</label><br>
+                        <input placeholder="Nome do produto/serviço" type="text" id="nome_contato" name="nome_contato">
+                    </div>
+                    
+                    <div>
+                        <label for="descricao">Descrição completa:</label><br>
+                        <textarea placeholder="Descrição do Item" type="descricao" id="descricao" name="descricao"></textarea>
+                    </div>
+                </form>
+
+                <form class="formulario_dropDown">
+                        <div class="input_tipo">
+                            <label for="tipo">Tipo do Item:</label><br>
+                            <select value="Produto" id="tipo" name="tipo">
+                                <option value="produto">Produto</option>
+                                <option value="servico">Serviço</option>
+                            </select>
+                        </div>
+                        <div class="input_categoria">
+                            <label for="categoria">Categoria:</label><br>
+                            <select value="Eletronicos" id="categoria" name="categoria">
+                                <option value="eletronicos">Eletronicos</option>
+                                <option value="saude">Saúde</option>
+                                <option value="alimenticio">Alimentício</option>
+                                <option value="papelaria">Papelaria</option>
+                                <option value="escolar">Escolar</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="botoes">
+                <input value="Salvar" type="submit"class="botao_salvar"></input>
+                <input value="Excluir" type="submit"class="botao_excluir"></input>
+            </div>
         </section>
-
-        <script src="/js/home.js"></script> <!--Efeito MENU-->
-
-        <script> 
-            // Configuração DataTable
-            var table = new DataTable('#listar_fornecedor', {
-                searching: true,
-                lengthMenu: [5],
-                paging: true,
-                ordering: false,
-                language: {
-                    lengthMenu: '',
-                    info: 'Página _PAGE_ de _PAGES_',
-                    sEmptyTable: 'Não há registros',
-                    searchPlaceholder: 'Busca fácil',
-                    sInfoEmpty: '',
-                    search: 'Filtrar: ',
-                },
-            });
-        </script>
-
+        <script src="/js/home.js"></script>
     </main>
 </body>
 </html>
