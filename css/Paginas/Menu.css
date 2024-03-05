@@ -1,4 +1,4 @@
-@import url(Style.css);
+@import url(/css/Style.css);
 
 .sidebar {
     align-items: center;
@@ -104,11 +104,11 @@
 
 @media screen and (min-width:1728px) {
     .sidebar {
-        width: 13%;
+        width: 15%;
     }
 
     .WSLogo {
-        width: 11%;
+        width: 12%;
     }
 
     .menu_options li, .menu_options li a {
