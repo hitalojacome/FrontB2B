@@ -139,7 +139,7 @@ main {
     transition: .4s;
     text-decoration: none;
     padding: 0.5em;
-    width: 15%;
+    width: 100%;
 }
 
 .botao_cadastrar:hover{
