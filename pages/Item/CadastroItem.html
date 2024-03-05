@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/Paginas/Item/CadastroItem.css" class="text/css">
+    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
+    <title>Catálogo B2B</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <img class="WSLogo" src="/assets/WSLogo.png">
+            <ul class="menu">
+                <li class="menu_home">
+                    <a href="../Home.html" class="menu_botao home">
+                        <img class="menu_logo-home" src="/assets/menu/Home-logo.png"><p>Home</p>
+                    </a>
+                </li>
+                <li class="menu_usuario">
+                    <a href="/" class="menu_botao usuario">
+                        <img class="menu_logo usuario" src="/assets/menu/User-logo.png"><p>Usuários</p>
+                    </a>
+                </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png"><p>Catálogos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Cadastrar catálogo</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png"><p>Pedidos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Realizar pedido</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item fornecedor">
+                    <div class="menu_botao fornecedor">
+                        <img class="menu_logo fornecedor" src="/assets/menu/Fornecedor-logo.png"><p>Fornecedores</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Fornecedor/ListagemFornecedor.html"><li>Consultar</li></a>
+                        <a href="/pages/Fornecedor/CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item cliente">
+                    <div class="menu_botao cliente">
+                        <img class="menu_logo cliente" src="/assets/menu/Cliente-logo.png"><p>Clientes</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Cliente/ListagemCliente.html"><li>Consultar</li></a>
+                        <a href="/pages/Cliente/CadastroCliente.html"><li>Cadastrar cliente</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item categoria">
+                    <div class="menu_botao categoria">
+                        <img class="menu_logo categoria" src="/assets/menu/Categoria-logo.png"><p>Categorias</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="Acesso.html"><li>Consultar</li></a>
+                        <a href="Acesso.html"><li>Cadastrar categoria</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item item">
+                    <div class="menu_botao item">
+                        <img class="menu_logo item" src="/assets/menu/Item-logo.png"><p>Itens</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="ListagemItem.html"><li>Consultar</li></a>
+                        <a href="CadastroItem.html"><li>Cadastrar item</li></a>
+                    </ul>
+                </li>
+            </ul>
+            <a href="../Acesso.html" class="botao_sair">Encerrar</a>
+        </nav class="sidebar">
+
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <h1>Cadastro de Item</h1>
+                <hr/>
+            </div>
+            <div class="cadastro">
+                <form class="formulario_dados">
+                    <div class="cnpj_view">
+                        <div>
+                            <label for="cnpj_fornecedor">CNPJ do fornecedor:</label><br>
+                            <input placeholder="CNPJ" type="text" id="cnpj_fornecedor" name="cnpj_fornecedor">
+                        </div>
+                        <p class="razao_social"><u>- Empresa LTDA</u></p>
+                    </div>
+
+                    <div>
+                        <label for="nome_contato">Nome do item:</label><br>
+                        <input placeholder="Nome do produto/serviço" type="text" id="nome_contato" name="nome_contato">
+                    </div>
+                    
+                    <div>
+                        <label for="descricao">Descrição completa:</label><br>
+                        <textarea placeholder="Descrição do Item" type="descricao" id="descricao" name="descricao"></textarea>
+                    </div>
+                </form>
+
+                <form class="formulario_dropDown">
+                        <div class="input_tipo">
+                            <label for="tipo">Tipo do Item:</label><br>
+                            <select value="Produto" id="tipo" name="tipo">
+                                <option value="produto">Produto</option>
+                                <option value="servico">Serviço</option>
+                            </select>
+                        </div>
+                        <div class="input_categoria">
+                            <label for="categoria">Categoria:</label><br>
+                            <select value="Eletronicos" id="categoria" name="categoria">
+                                <option value="eletronicos">Eletronicos</option>
+                                <option value="saude">Saúde</option>
+                                <option value="alimenticio">Alimentício</option>
+                                <option value="papelaria">Papelaria</option>
+                                <option value="escolar">Escolar</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <a href="ListagemFornecedor.html"><input value="Cadastrar" type="submit"class="botao_cadastrar"></input></a>
+        </section>
+        <script src="/js/home.js"></script>
+    </main>
+</body>
+</html>

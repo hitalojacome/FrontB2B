@@ -1,0 +1,162 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.formulario {
+    background-color: var(--principal-rgba);
+    height: 35em;
+    width: 55em;
+    padding: 1.5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_formulario {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_formulario h1 {
+    padding: .1em;
+}
+
+.formulario hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.cadastro {
+    color: var(--cor-fontebranca);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.formulario_dados, .formulario_dropDown {
+    margin-top: 1em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.cadastro label {
+    padding-left: .4em;
+}
+
+.cadastro input {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+.cnpj_view {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cnpj_view input {
+    width: 11em;
+}
+
+.razao_social {
+    font-size: 19px;
+    margin-top: 1em;
+    text-decoration: dotted;
+}
+
+#descricao {
+    height: 10em;
+    resize: none;
+    font-size: 16px;
+    width: 100%;
+    padding: .8em 0em 0em .8em;
+    border: 1px solid #000;
+}
+
+.cadastro select {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+#tipo {
+    width: 80%;
+}
+
+.botao_cadastrar {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.botao_cadastrar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .formulario {
+        width: 65em;
+        height: 45em;
+    }
+
+    .titulo_formulario hr {
+        border-width: .1em;
+    }
+
+    .cadastro input {
+        height: 4em;
+    }
+
+    .formulario_dados, .formulario_dropDown {
+        gap: 30px;
+    }
+
+    #descricao {
+        height: 12em;
+    }
+
+    #tipo {
+        width: 60%;
+    }
+
+    .cadastro select {
+        height: 4em;
+    }
+}
