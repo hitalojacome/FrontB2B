@@ -1,0 +1,226 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botao_voltar {
+    position: absolute;
+    margin-bottom: 35em;
+    margin-left: 15em;
+    transition: .4s;
+}
+
+.botao_voltar img:hover {
+    scale: 1.2;
+    transition: .4s;
+}
+
+.formulario {
+    background-color: var(--principal-rgba);
+    color: var(--cor-fontebranca);
+    height: 30em;
+    width: 55em;
+    padding: 1.5em 2em .5em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_usuario {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.formulario hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.edicao {
+    background-color: var(--cor-principal);
+    padding: 2em 2em 0 2em;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    width: 50em;
+    height: 19em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.formulario_input {
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+    gap: 2em;
+}
+
+.formulario_input div {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.formulario_input input {
+    background-color: var(--cor-fundo);
+    width: 80%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+/* Aqui comença o Toggler On/Off */
+.botao_ativo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    height: 30%;
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    width: 72%;
+}
+
+.switch {
+    width: 34%;
+}
+  
+/* Esconde o checkbox */
+.switch > .hidden-toggle {
+    display: none;
+}
+  
+/* Caixinha onde o botão desliza */
+.switch > .slider {
+    background: #9D2F35;
+    border: 2px solid var(--cor-fontebranca);
+    border-radius: 71px;
+    transition: all 300ms ease-in-out;
+    width: 5rem;
+    height: 2.6rem;
+    margin-right: 9.5em;
+    box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+      0 0 1rem rgba(0, 0, 0, 0.1);
+}
+  
+/* O botão */
+.switch > .slider > .button {
+    cursor: pointer;
+    width: 2.3rem;
+    height: 2.3rem;
+    background: var(--cor-websalmao);;
+    transition: all 300ms ease-in-out;
+    border-radius: 50%;
+    box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.slider .button img {
+    width: 50%;
+    margin-left: .5em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-88%, -50%);
+}
+
+/* Slider OFF */
+.switch > .hidden-toggle:checked ~ .slider {
+    background: var(--cor-fundo);
+    box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+      0 0 1rem rgba(50, 0, 150, 0.2);
+}
+
+/* Botão OFF */
+.switch > .hidden-toggle:checked ~ .slider > .button {
+    margin-left: 2.5rem;
+    background: #444242;
+    padding: .1em;
+
+}
+
+/* Ícone do botão OFF */
+.slider .button img.off-icon {
+    content: url("/assets/icons/Inativo.png");
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -50%);
+}
+
+.switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
+    display: none;
+}
+
+.switch > .hidden-toggle ~ .slider > .button img.off-icon {
+    display: none;
+}
+.switch > .hidden-toggle:checked ~ .slider > .button img.off-icon {
+    display: block;
+}
+
+.botao_salvar {
+    background: url("/assets/icons/salvar.png") no-repeat scroll 9px 8px;
+    background-color: var(--cor-websalmao);
+    background-size: 1.2em;
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    margin-top: 2em;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 15%;
+    padding-left: 1.3em;
+}
+
+.botao_salvar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .botao_voltar {
+        margin-bottom: 53em;
+        margin-left: 23em;
+    }
+
+    .formulario_input {
+        padding-top: 0;
+    }
+
+    .formulario_input input {
+        height: 4em;
+    }
+}

@@ -92,67 +92,42 @@
         </nav>
 
         <div class="botao_voltar">
-            <a href="ListagemFornecedor.html"><img  src="/assets/icons/seta-voltar.png"></a>
-            </div>
+            <a href="ListagemUsuario.html"><img  src="/assets/icons/seta-voltar.png"></a>
+        </div>
+
         <section class="formulario">
-            <div class="titulo_formulario">
-                <div class="info">
-                    <div class="titulo_item">
-                        <h1>Item: </h1>
-                        <h3>Headset Microsoft</h2>
-                    </div>
-                    <div class="titulo_fornecedor">
-                        <h1>Fornecedor: </h1>
-                        <h3>Empresa LTDA</h2>
-                    </div>
-                </div>
+            <div class="titulo_usuario">
+                <h1>Usuário</h1>
                 <hr/>
             </div>
-            <div class="cadastro">
-                <form class="formulario_dados">
-                    <div class="cnpj_view">
+            <div class="edicao">
+                <div class="dados">
+                    <form class="formulario_input">
                         <div>
-                            <label for="cnpj_fornecedor">CNPJ do fornecedor:</label><br>
-                            <input placeholder="CNPJ" type="text" id="cnpj_fornecedor" name="cnpj_fornecedor">
+                            <label for="nome">Nome:</label>
+                            <input placeholder="Nome" type="text" id="nome" name="nome">
                         </div>
-                        <p class="razao_social"><u>- Empresa LTDA</u></p>
-                    </div>
-
-                    <div>
-                        <label for="nome_contato">Nome do item:</label><br>
-                        <input placeholder="Nome do produto/serviço" type="text" id="nome_contato" name="nome_contato">
-                    </div>
-                    
-                    <div>
-                        <label for="descricao">Descrição completa:</label><br>
-                        <textarea placeholder="Descrição do Item" type="descricao" id="descricao" name="descricao"></textarea>
-                    </div>
-                </form>
-
-                <form class="formulario_dropDown">
-                        <div class="input_tipo">
-                            <label for="tipo">Tipo do Item:</label><br>
-                            <select value="Produto" id="tipo" name="tipo">
-                                <option value="produto">Produto</option>
-                                <option value="servico">Serviço</option>
-                            </select>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input placeholder="Email" type="email" id="email" name="email">
                         </div>
-                        <div class="input_categoria">
-                            <label for="categoria">Categoria:</label><br>
-                            <select value="Eletronicos" id="categoria" name="categoria">
-                                <option value="eletronicos">Eletronicos</option>
-                                <option value="saude">Saúde</option>
-                                <option value="alimenticio">Alimentício</option>
-                                <option value="papelaria">Papelaria</option>
-                                <option value="escolar">Escolar</option>
-                            </select>
+                    </form>
+                    <div class="botao_ativo">
+                        <label for="botao_ativo">Ativo:</label>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" class="hidden-toggle" id="botao_ativo" name="botao_ativo"/>
+                                <div class="slider">
+                                    <div class="button">
+                                        <img class="toggle-icon" src="/assets/icons/ativo.png">
+                                        <img class="off-icon" src="/assets/icons/Inativo.png">
+                                    </div>
+                                </div>
+                            </label>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="botoes">
+                </div>
                 <input value="Salvar" type="submit"class="botao_salvar"></input>
-                <input value="Excluir" type="submit"class="botao_excluir"></input>
             </div>
         </section>
         <script src="/js/home.js"></script>
