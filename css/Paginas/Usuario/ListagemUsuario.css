@@ -185,19 +185,26 @@ table img {
         height: 40em;
     }
 
-    .titulo_usuarioForm {
-        font-size: 20px;
+    .modal {
+        width: 55.3%;
+        top: 130px;
+        height: 73.5%;
     }
-
-    .cadastro_usuarioForm-dados {
-        margin-top: 1.5em;
-    }
-
+    
     .cadastro_usuario {
         width: 55.3%;
         height: 73.5%;
-        top: 131px;
+
     }
+
+    .titulo_usuario {
+        font-size: 20px;
+    }
+
+    .cadastro_usuario-dados {
+        margin-top: 1.5em;
+    }
+
 
     .inputs {
         width: 90%;
