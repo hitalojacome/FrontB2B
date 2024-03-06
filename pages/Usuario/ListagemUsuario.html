@@ -96,83 +96,106 @@
         </nav class="sidebar">
 
         <section class="listagem">
-        <div class="titulo_listagem">
-            <h1>Itens</h1>
-            <hr/>
-        </div>
-        <div class="listagem_tabela">
-            <table id="listar_fornecedor" class="display" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Status</th>
-                        <th>Detalhes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Keven Abraham</td>
-                        <td>ksouza@websupply.com.br</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div id="myModal" class="modal">
+                <div class="cadastro_usuario">
+                    <div class="titulo_usuario">
+                        <h1>Inclusão de Usuários</h1>
+                        <hr/>
+                    </div>
+                    <div class="cadastro_usuario-dados">
+                        <form class="inputs">
+                            <div>
+                                <label for="nome">Nome:</label><br>
+                                <input placeholder="Nome" type="text" id="nome" name="nome">
+                            </div>
+                            <div>
+                                <label for="email">Email:</label><br>
+                                <input placeholder="Email" type="email" id="email" name="email">
+                            </div>
+                        </form>
+                        <input value="Salvar" type="submit"class="botao_salvar"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="titulo_listagem">
+                <h1>Usuários</h1>
+                <hr/>
+            </div>
+            <div class="listagem_tabela">
+                <table id="listar_fornecedor" class="display" style="width: 100%;">
+                    <button id="botao_novoUsuario">+ Adicionar usuário</button>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Keven Abraham</td>
+                            <td>ksouza@websupply.com.br</td>
+                            <td>Inativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mirella Germano</td>
+                            <td>mgermano@websupply.com.br</td>
+                            <td>Ativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hitalo Jacome</td>
+                            <td>hjacome@websupply.com.br</td>
+                            <td>Ativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leticia Astorga</td>
+                            <td>lastorga@websupply.com.br</td>
+                            <td>Ativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cristian Ferreira</td>
+                            <td>cferreira@websupply.com.br</td>
+                            <td>Inativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fabio Cassadore</td>
+                            <td>fcassadore@websupply.com.br</td>
+                            <td>Ativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adalberto Silva</td>
+                            <td>alsilva@websupply.com.br</td>
+                            <td>Ativo</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <script src="/js/home.js"></script> <!--Efeito MENU-->
+        <script src="/js/show.js"></script> <!--Efeito MENU-->
 
         <script> 
             // Configuração DataTable

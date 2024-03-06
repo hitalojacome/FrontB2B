@@ -50,19 +50,125 @@ main {
     margin-top: 1em;
 }
 
+#botao_novoUsuario {
+    position: fixed;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fontebranca);
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    padding: .6em 1.2em;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: .2em 0 0 .5em;
+    transition: .4s;
+}
+
+#botao_novoUsuario:hover {
+    background-color: var(--cor-webazul);
+    transition: .4s;
+}
+
 table a {
     border: none;
 }
 
-/*parei aqui*/
-
 table a:hover {
-    background-color: none;
+    background-color: transparent;
 }
 
 table img {
     width: 15%;
 } 
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    background-color: var(--cor-fundo-rgba);
+    border-radius: 20px;
+    width: 59%;
+    height: 64.2%;
+    top: 157px;
+}
+
+.cadastro_usuario {
+    background-color: var(--principal-rgba);
+    color: var(--cor-fontebranca);
+    width: 50%;
+    height: 70%;
+    padding: 1em 2em;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+}
+
+.titulo_usuario {
+    font-size: 19px;
+}
+
+.cadastro_usuario-dados {
+    background-color: var(--cor-principal);
+    border-radius: 20px;
+    border: 2px solid #fff;
+    padding: 1.5em 2em;
+    margin-top: 1em;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.inputs div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.inputs input {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+.botao_salvar {
+    background: url("/assets/icons/salvar.png") no-repeat scroll 9px 8px;
+    background-color: var(--cor-websalmao);
+    background-size: 1.2em;
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 42%;
+    padding-left: 1.3em;
+}
+
+.botao_salvar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
 
 @media screen and (min-width:1728px) {
     .listagem {
@@ -73,5 +179,24 @@ table img {
     .listagem_tabela {
         width: 60em;
         height: 40em;
+    }
+
+    .titulo_usuarioForm {
+        font-size: 20px;
+    }
+
+    .cadastro_usuarioForm-dados {
+        margin-top: 1.5em;
+    }
+
+    .cadastro_usuario {
+        width: 55.3%;
+        height: 73.5%;
+        top: 131px;
+    }
+
+    .inputs {
+        width: 90%;
+        gap: 50px;
     }
 }
