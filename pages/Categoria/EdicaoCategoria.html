@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Categoria/CadastroCategoria.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Categoria/EdicaoCategoria.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <title>Catálogo B2B</title>
@@ -90,3 +90,42 @@
             </ul>
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
+        
+        <div class="botao_voltar">
+            <a href="ListagemCategoria.html"><img  src="/assets/icons/seta-voltar.png"></a>
+            </div>
+
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <div class="titulo_info">
+                    <div class="titulo_categoria">
+                        <h1>Categoria: </h1>
+                        <h3>Eletrônicos</h3>
+                    </div>
+                    <div class="titulo_fornecedor">
+                        <h1>Fornecedor: </h1>
+                        <h3>Empresa LTDA</h3>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+            <div class="edicao">
+                <form class="formulario_dados">
+                    <div class="cnpj_view">
+                        <div>
+                            <label for="descricao">Descrição:</label><br>
+                            <input placeholder="Descrição" type="text" id="descricao" name="descricao">
+                        </div>
+                        <p class="razao_social"><u>- Empresa LTDA</u></p>
+                    </div>
+                </form>
+                <div class="botoes">
+                    <input value="Salvar" type="submit"class="botao_salvar"></input>
+                    <input value="Excluir" type="submit"class="botao_excluir"></input>
+                </div>
+            </div>
+        </section>
+        <script src="/js/home.js"></script>
+    </main>
+</body>
+</html>

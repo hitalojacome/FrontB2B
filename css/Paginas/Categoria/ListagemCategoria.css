@@ -13,7 +13,7 @@ main {
 .listagem {
     background-color: var(--principal-rgba);
     height: 35em;
-    width: 55em;
+    width: 45em;
     padding: 1.5em 2em;
     align-items: center;
     margin: auto;
@@ -45,7 +45,7 @@ main {
 .listagem_tabela {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
-    width: 50em;
+    width: 40em;
     height: 37em;
     margin-top: 1em;
 }
