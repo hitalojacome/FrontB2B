@@ -6,8 +6,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Categoria/CadastroCategoria.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Categoria/ListagemCategoria.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
+    <!--DataTables-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
 
     <title>Catálogo B2B</title>
 </head>
@@ -90,3 +94,97 @@
             </ul>
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
+
+        <section class="listagem">
+            <div class="titulo_listagem">
+                <h1>Categorias</h1>
+                <hr/>
+            </div>
+            <div class="listagem_tabela">
+                <table id="listar_fornecedor" class="display" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Fornecedor</th>
+                            <th>Descrição</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EcoSync Ventures</td>
+                            <td>Tecnologia</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EcoSync Ventures</td>
+                            <td>Hardware</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Empresa LTDA</td>
+                            <td>Eletrônicos</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NexusData Labs</td>
+                            <td>Saúde</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Empresa LTDA</td>
+                            <td>Papelaria</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>QuantumCraft Innovations</td>
+                            <td>Diversos</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gimba</td>
+                            <td>Refeitório</td>
+                            <td>
+                                <a href="EdicaoUsuario.html" class="botao_expandir"><img src="/assets/icons/editar.png" alt="Icone de edição"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script src="/js/home.js"></script> <!--Efeito MENU-->
+        <script src="/js/show.js"></script> <!--Efeito MODAL-->
+
+        <script> 
+            // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: true,
+                lengthMenu: [5],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    sEmptyTable: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    sInfoEmpty: '',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
+
+    </main>
+</body>
+</html>
