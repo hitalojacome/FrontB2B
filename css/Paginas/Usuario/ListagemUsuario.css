@@ -177,22 +177,21 @@ table img {
 @media screen and (min-width:1728px) {
     .listagem {
         width: 65em;
-        height: 45em;
+        height: 37em;
     }
 
     .listagem_tabela {
         width: 60em;
-        height: 40em;
     }
 
     .modal {
         width: 55.3%;
-        top: 130px;
-        height: 73.5%;
+        top: 192px;
+        height: 60.7%;
     }
     
     .cadastro_usuario {
-        width: 55.3%;
+        width: 50%;
         height: 73.5%;
 
     }

@@ -23,7 +23,7 @@ main {
 
 .formulario {
     background-color: var(--principal-rgba);
-    width: 49em;
+    width: 30em;
     height: 20em;
     padding: 1.5em 2em;
     align-items: center;
@@ -42,23 +42,18 @@ main {
     gap: 100px;
 }
 
-.titulo_info {
-    display: flex;
-    gap: 20px;
-}
 
-.titulo_categoria, .titulo_fornecedor {
+.titulo_categoria {
     display: flex;
     align-items: center;
 }
 
-.titulo_info h3 {
-    margin-left: .2em;
-    margin-top: .2em;
-} 
+.titulo_categoria h1 {
+    padding: 0 .3em .2em 0;
+}
 
-.titulo_formulario h1 {
-    padding: .1em;
+.titulo_categoria h3 {
+    padding: 0 0 .1em 0;
 }
 
 .formulario hr {
@@ -75,13 +70,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
-    align-items: center;
 }
 
 .formulario_dados {
-    margin-top: 1em;
-    width: 60%;
+    margin-top: .6em;
     display: flex;
     font-size: 17px;
     font-weight: 700;
@@ -100,6 +92,7 @@ main {
 }
 
 .cnpj_view {
+    width: 100%;
     margin-top: 1em;
     display: flex;
     align-items: center;
@@ -107,15 +100,19 @@ main {
 }
 
 .cnpj_view input {
-    width: 16em;
+    width: 15em;
 }
 
 .botoes {
-    margin: auto;
     margin-top: 4em;
-    width: 48%;
+    width: 100%;
     display: flex;
     gap: 45px;
+}
+
+.botoes input {
+    margin: auto;
+    width: 37%;
 }
 
 .botao_salvar {
@@ -161,16 +158,21 @@ main {
 }
 
 @media screen and (min-width:1728px) {
+    .botao_voltar {
+        margin-bottom: 53em;
+        margin-left: 23em;
+    }
+
     .formulario {
-        width: 65em;
-        height: 45em;
+        width: 30em;
+        height: 28em;
     }
 
     .titulo_formulario hr {
         border-width: .1em;
     }
 
-    .edicao input {
+    .formulario_dados input {
         height: 4em;
     }
 }

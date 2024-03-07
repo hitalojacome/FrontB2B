@@ -53,11 +53,10 @@ main {
 @media screen and (min-width:1728px) {
     .listagem {
         width: 65em;
-        height: 45em;
+        height: 35em;
     }
 
     .listagem_tabela {
         width: 60em;
-        height: 40em;
     }
 }

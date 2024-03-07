@@ -100,34 +100,8 @@ main {
 }
 
 @media screen and (min-width:1728px) {
-    .formulario {
-        width: 65em;
-        height: 45em;
-    }
-
-    .formulario hr {
-        border-width: .2em;
-    }
-
-    .titulo_formulario hr {
-        border-width: .1em;
-    }
-
-    .cadastro input {
-        height: 4em;
-    }
-
-    .cep_botao button {
-        width: 40%;
-        margin-left: 7%;
-    }
-
-    .cep_botao input {
-        width: 14em;
-    }
-
-    .cadastro select {
-        width: 13em;
-        height: 4em;
+    .cadastro_categoria {
+        width: 32em;
+        height: 25em;
     }
 }
