@@ -1,0 +1,133 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--cor-fontebranca);
+}
+
+.cadastro_usuario {
+    background-color: var(--principal-rgba);
+    width: 30em;
+    height: 24.5em;
+    padding: 1em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+}
+
+.titulo_usuario {
+    font-size: 19px;
+}
+
+.titulo_usuario hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.cadastro_usuario-dados {
+    background-color: var(--cor-principal);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    padding: 0em 2em;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.formulario input {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+}
+
+.cnpj_view {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cnpj_view input {
+    width: 11em;
+}
+
+.cnpj_view p {
+    font-size: 17px;
+}
+
+.botao_cadastrar {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.botao_cadastrar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .formulario {
+        width: 65em;
+        height: 45em;
+    }
+
+    .formulario hr {
+        border-width: .2em;
+    }
+
+    .titulo_formulario hr {
+        border-width: .1em;
+    }
+
+    .cadastro input {
+        height: 4em;
+    }
+
+    .cep_botao button {
+        width: 40%;
+        margin-left: 7%;
+    }
+
+    .cep_botao input {
+        width: 14em;
+    }
+
+    .cadastro select {
+        width: 13em;
+        height: 4em;
+    }
+}
