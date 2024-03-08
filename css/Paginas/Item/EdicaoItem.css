@@ -185,6 +185,10 @@ main {
 }
 
 @media screen and (min-width:1728px) {
+    .botao_voltar {
+        margin-bottom: 53em;
+        margin-left: 23em;
+    }
     .formulario {
         width: 65em;
         height: 45em;
