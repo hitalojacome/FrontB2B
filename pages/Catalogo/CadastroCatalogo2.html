@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Catalogo/CadastroCatalogo.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Catalogo/CadastroCatalogo2.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <!--DataTables-->
@@ -95,43 +95,34 @@
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
         <section class="geral">
-            <img class="timeline" src="/assets/timeline_catalogo1.png" alt="timeline passo 1" />
+            <img class="timeline" src="/assets/timeline_catalogo2.png" alt="timeline passo 2" />
             <div class="cadastro">
                 <div class="titulo_cadastro">
                     <h1>Cadastro de Catálogo</h1>
                     <hr/>
                 </div>
-                <div class="input">
-                    <div class="input_fornecedor">
-                        <label for="uf">Fornecedor:</label><br>
-                        <select value="Empresa Ltda" id="fornecedor" name="fornecedor">
-                            <option value="empresaltda">Empresa LTDA</option>
-                            <option value="nexusdata">NexusData Labs</option>
-                            <option value="ecosync">Ecosync Ventures</option>
-                        </select>
-                    </div>
-                    <div class="input_descricao">
-                        <label for="descricao">Descrição do catálogo:</label><br>
-                        <input placeholder="Catálogo" type="text" id="descricao" name="descricao">
-                    </div>
+                <div class="show_fornecedor">
+                    <h2>Fornecedor: </h2>
+                    <h2>Empresa LTDA</h2>
                 </div>
                 <div class="listagem_tabela">
                     <table id="listar_fornecedor" class="display" style="width: 100%;">
+                        <h1>Eletrônicos</h1>
                         <thead>
                             <tr>
                                 <th>Tipo</th>
                                 <th>Item</th>
                                 <th>Categoria</th>
-                                <th>Incluir</th>
+                                <th>Valor</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Produto</td>
-                                <td>Headset Microsoft</td>
+                                <td>Teclado Microsoft</td>
                                 <td>Eletrônicos</td>
                                 <td>
-                                    <input type="checkbox" id="scales" name="scales" />
+                                    <input type="text" placeholder="R$"/>
                                 </td>
                             </tr>
                             <tr>
@@ -139,30 +130,33 @@
                                 <td>Teclado Microsoft</td>
                                 <td>Eletrônicos</td>
                                 <td>
-                                    <input type="checkbox" id="scales" name="scales" />
+                                    <input type="text" placeholder="R$"/>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Serviço</td>
-                                <td>Formatação SO</td>
-                                <td>Tecnologia</td>
+                                <td>Produto</td>
+                                <td>Teclado Microsoft</td>
+                                <td>Eletrônicos</td>
                                 <td>
-                                    <input type="checkbox" id="scales" name="scales" />
+                                    <input type="text" placeholder="R$"/>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <a href="CadastroCatalogo2.html" class="next_button">
-                    <img src="/assets/icons/next.png" alt="botao para avancar" />
-                </a>
+                <div class="botoes">
+                    <a href="CadastroCatalogo.html" class="back_button">
+                        <img src="/assets/icons/back.png" alt="botao para avancar" />
+                    </a>
+                    <a href="CadastroCatalogo3.html"><input value="Concluir" type="submit"class="botao_cadastrar"></input></a>
+                </div>
             </div>
         </section>
         <script src="/js/home.js"></script>
         <script> 
             // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
-                searching: true,
+                searching: false,
                 lengthMenu: [3],
                 paging: true,
                 ordering: false,

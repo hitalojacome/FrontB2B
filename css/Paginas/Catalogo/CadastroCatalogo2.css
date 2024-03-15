@@ -34,7 +34,6 @@ main {
     border: 5px solid #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .titulo_cadastro {
@@ -55,45 +54,65 @@ main {
     border-radius: 5px;
 }
 
-.input {
+.show_fornecedor {
     display: flex;
-    gap: 23em;
-}
-
-.cadastro select {
-    background-color: var(--cor-fundo);
-    width: 13em;
-    height: 2.8em;
-    font-size: 16px;
-    padding-left: .8em;
-}
-
-.input label {
-    padding-left: .4em;
-}
-
-.input input {
-    background-color: var(--cor-fundo);
-    width: 100%;
-    height: 2.8em;
-    font-size: 16px;
-    padding-left: .8em;
+    align-items: start;
+    gap: .4em;
+    margin-right: 30em;
+    padding: 1em;
 }
 
 .listagem_tabela {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     width: 50em;
-    height: 20.5em;
-    margin-top: 1em;
+    height: 23em;
+    margin-top: .1em;
 }
 
-.next_button {
-    position: relative;
-    margin-left: 45em;
+.listagem_tabela h1 {
+    text-align: center;
+    margin-top: .5em;
+}
+
+.listagem_tabela input {
+    border-radius: 0;
+    padding: .5em;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 40em;
+    padding: .5em 2em  0 2em;
+    align-items: center;
+}
+
+.back_button {
     background-color: var(--cor-websalmao);
     padding: 1.2em;
     border-radius: 50px;
+}
+
+.botao_cadastrar {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.6em;
+    width: 100%;
+}
+
+.botao_cadastrar:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
 }
 
 @media screen and (min-width:1728px) {

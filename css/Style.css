@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+* input {
+    border: none;
+    border-radius: 10px;
+}
+
+* label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
 :root {
     --principal-rgba: rgba(27,44,62,0.9);
     --cor-principal: #1B2C3E;

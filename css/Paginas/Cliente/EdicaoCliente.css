@@ -286,7 +286,7 @@ width: 14em;
 
     .edicao {
         width: 65em;
-        height: 45em;
+        height: 40em;
     }
 
     .titulo_edicao h3 {
@@ -295,14 +295,14 @@ width: 14em;
 
     .edicao_cliente {
         width: 60em;
-        height: 35em;
+        height: 30em;
     }
 
     .formulario_dados-UM,
     .formulario_endereco-UM,
     .formulario_endereco-DOIS {
         gap: 2em;
-        padding-top: 2em;
+        padding-top: 1em;
         width: 44%
     }
 

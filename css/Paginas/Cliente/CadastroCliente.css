@@ -151,7 +151,7 @@ main {
 @media screen and (min-width:1728px) {
     .formulario {
         width: 65em;
-        height: 45em;
+        height: 40em;
     }
 
     .formulario hr {
@@ -163,7 +163,7 @@ main {
     }
 
     .cadastro input {
-        height: 4em;
+        height: 3.6em;
     }
 
     .cep_botao button {
