@@ -57,7 +57,7 @@ main {
 
 .input {
     display: flex;
-    gap: 23em;
+    gap: 22em;
 }
 
 .cadastro select {
@@ -66,6 +66,7 @@ main {
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
+    border-radius: 10px;
 }
 
 .input label {
@@ -74,7 +75,7 @@ main {
 
 .input input {
     background-color: var(--cor-fundo);
-    width: 100%;
+    width: 15em;
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
@@ -97,34 +98,7 @@ main {
 }
 
 @media screen and (min-width:1728px) {
-    /* .formulario {
-        width: 65em;
-        height: 45em;
+    .timeline {
+        margin-bottom: 2em;
     }
-
-    .formulario hr {
-        border-width: .2em;
-    }
-
-    .titulo_formulario hr {
-        border-width: .1em;
-    }
-
-    .cadastro input {
-        height: 4em;
-    }
-
-    .cep_botao button {
-        width: 40%;
-        margin-left: 7%;
-    }
-
-    .cep_botao input {
-        width: 14em;
-    }
-
-    .cadastro select {
-        width: 13em;
-        height: 4em;
-    } */
 }
