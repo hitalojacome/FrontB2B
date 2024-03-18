@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/css/Paginas/Catalogo/VisualizacaoCatalogo.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
+    <!--DataTables-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
     <title>Catálogo B2B</title>
 </head>
 
@@ -100,16 +104,102 @@
                 <h1>Visualizar Catálogo</h1>
                 <hr/>
             </div>
-            <div class="show_fornecedor">
-                <h2>Fornecedor: </h2>
-                <h2>EcoSync Ventures</h2>
+            <div class="info">
+                <div class="show_fornecedor">
+                    <h2>Fornecedor: </h2>
+                    <h2>EcoSync Ventures</h2>
+                </div>
+                <div class="show_relacionamento">
+                    <h3>Clientes Vinculados:</h3>
+                    <h3>2</h3>
+                </div>
             </div>
-            <div class="edicao_fornecedor">
-                
+            <div class="listagem_tabela">
+                <table id="listar_fornecedor" class="display" style="width: 100%;">
+                    <h1>Serviços Sudeste</h1>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Item</th>
+                            <th>Categoria</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Instalação WI-FI Residencial</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Limpeza de Virus e Malware</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 100,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Conf. de Segurança de Rede</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Backup e Recuperação de Dados</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>    
+                            <td>Manutenção Preventiva de Rede</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Otimização de Servidores</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td>
+                            <td>Cons. em Segurança Cibernética</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 600,00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <input value="Salvar" type="submit"class="botao_cadastrar"></input>
+            <div class="botoes">
+                <a href="ListagemCatalogo.html" class="back_button">
+                    <img src="/assets/icons/back.png" alt="botao para avancar" />
+                </a>
+                <div class="botoes_direita">
+                    <input value="Excluir" type="submit" class="botao_excluir"></input>
+                    <a href="#" class="botao_editar">Editar</a>
+                    <a href="#" class="botao_relacionar">Relacionar</a>
+                </div>
+            </div>
         </section>
         <script src="/js/home.js"></script>
+        <script> 
+            // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: false,
+                lengthMenu: [6],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    sEmptyTable: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    sInfoEmpty: '',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
     </main>
 </body>
 </html>

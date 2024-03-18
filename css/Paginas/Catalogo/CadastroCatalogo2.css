@@ -88,13 +88,13 @@ main {
 .botoes {
     display: flex;
     gap: 40em;
-    padding: .5em 2em  0 2em;
+    padding: .5em 2em 0 2em;
     align-items: center;
 }
 
 .back_button {
     background-color: var(--cor-websalmao);
-    padding: 1em;
+    padding: 1.3em;
     border-radius: 50px;
 }
 
@@ -113,41 +113,20 @@ main {
     width: 100%;
 }
 
-.botao_cadastrar:hover{
+.back_button:hover ,.botao_cadastrar:hover{
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;
 }
 
 @media screen and (min-width:1728px) {
-    /* .formulario {
-        width: 65em;
-        height: 45em;
+    .timeline {
+        margin-bottom: 2em;
     }
 
-    .formulario hr {
-        border-width: .2em;
+    .cadastro {
+        height: 38em;
+        margin-bottom: 5em;
+        justify-content: space-between;
     }
-
-    .titulo_formulario hr {
-        border-width: .1em;
-    }
-
-    .cadastro input {
-        height: 4em;
-    }
-
-    .cep_botao button {
-        width: 40%;
-        margin-left: 7%;
-    }
-
-    .cep_botao input {
-        width: 14em;
-    }
-
-    .cadastro select {
-        width: 13em;
-        height: 4em;
-    } */
 }

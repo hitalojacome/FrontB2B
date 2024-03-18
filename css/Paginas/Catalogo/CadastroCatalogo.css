@@ -87,12 +87,23 @@ main {
     position: relative;
     margin-left: 45em;
     background-color: var(--cor-websalmao);
-    padding: 1.2em;
+    padding: 1.3em;
     border-radius: 50px;
+}
+
+.next_button:hover {
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
 }
 
 @media screen and (min-width:1728px) {
     .timeline {
         margin-bottom: 2em;
+    }
+
+    .cadastro {
+        height: 38em;
+        margin-bottom: 5em;
     }
 }

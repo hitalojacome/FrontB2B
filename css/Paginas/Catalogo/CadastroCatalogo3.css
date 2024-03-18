@@ -63,6 +63,10 @@ main {
 
 @media screen and (min-width:1728px) {
     .timeline {
+        margin-bottom: 10em;
+    }
+
+    .cadastro {
         margin-bottom: 5em;
     }
 }

@@ -1,5 +1,6 @@
 @import url(/css/Style.css);
 @import url(/css/Paginas/Menu.css);
+@import url(/css/datatables.css);
 
 main {
     background-image: url(/assets/Fundo.png);
@@ -24,16 +25,16 @@ main {
 .visualizar {
     background-color: var(--principal-rgba);
     color: var(--cor-fontebranca);
-    height: 35em;
     width: 55em;
+    height: 44em;
     padding: 1.5em 2em .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     border-radius: 20px;
     border: 5px solid #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .titulo_visualizar {
@@ -42,18 +43,20 @@ main {
     gap: 100px;
 }
 
-
-.show_fornecedor {
+.info {
+    width: 100%;
+    padding: 0 2em;
     display: flex;
-    align-items: start;
-    gap: .4em;
-    margin-right: 27em;
-    width: 23em;
-    padding: 1em;
+    justify-content: space-between;
+    gap: 40px;
+    
 }
 
-.titulo_edicao h1 {
-    padding: .1em;
+.show_fornecedor, .show_relacionamento {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
 }
 
 .visualizar hr {
@@ -63,197 +66,45 @@ main {
     border-radius: 5px;
 }
 
-.edicao_fornecedor {
+.listagem_tabela {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
-    border-radius: 20px;
     width: 50em;
-    height: 25.1em;
-    display: flex;
-    flex-direction: column;
+    height: 30.4em;
+    margin-top: .1em;
 }
 
-.formulario_dados, .formulario_endereco {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.formulario_dados-UM,
-.formulario_endereco-UM,
-.formulario_endereco-DOIS {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding-top: 1em;
-    width: 44%
-} 
-
-/* Aqui comença o Toggler On/Off */
-.toggle-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.switch {
-    width: 34%;
-}
-  
-/* Esconde o checkbox */
-.switch > .hidden-toggle {
-    display: none;
-}
-  
-/* Caixinha onde o botão desliza */
-.switch > .slider {
-    background: #9D2F35;
-    border: 0.1rem solid #bbb;
-    border-radius: 71px;
-    transition: all 300ms ease-in-out;
-    width: 5rem;
-    height: 2.5rem;
-    margin-right: 9.5em;
-    box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
-      0 0 1rem rgba(0, 0, 0, 0.1);
-}
-  
-/* O botão */
-.switch > .slider > .button {
-    cursor: pointer;
-    width: 2.3rem;
-    height: 2.3rem;
-    background: var(--cor-websalmao);;
-    transition: all 300ms ease-in-out;
-    border-radius: 50%;
-    box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.slider .button img {
-    width: 60%;
-    margin-left: .5em;
-}
-
-/* Slider OFF */
-.switch > .hidden-toggle:checked ~ .slider {
-    background: var(--cor-fundo);
-    box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
-      0 0 1rem rgba(50, 0, 150, 0.2);
-}
-
-/* Botão OFF */
-.switch > .hidden-toggle:checked ~ .slider > .button {
-    margin-left: 2.5rem;
-    background: #444242;
-    padding: .1em;
-
-}
-
-/* Ícone do botão OFF */
-.slider .button img.off-icon {
-    content: url("/assets/icons/Inativo.png");
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%, -80%);
-}
-
-.switch > .hidden-toggle ~ .slider > .button img.off-icon {
-    display: none;
-}
-
-.switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
-    display: none;
-}
-.switch > .hidden-toggle:checked ~ .slider > .button img.off-icon {
-    display: block;
-}
-
-.formulario_dados-DOIS {
-    padding-top:1em;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
-.formulario_dados-UM div,
-.formulario_dados-DOIS div,
-.formulario_endereco-UM div,
-.formulario_endereco-DOIS div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.edicao_fornecedor input {
-    background-color: var(--cor-fundo);
-    height: 2.8em;
-    font-size: 16px;
-    padding-left: .8em;
-}
-
-#razao_social, #nome_contato, #telefone, #email, #logradouro, #numero {
-    width: 15em;
-}
-
-#bairro  {
-    width: 17.6em;
-}
-
-#complemento {
-    width: 14em;
-}
-
-#cep {
-    width: 6.5em;
-    margin-left: 4.6em;
-}
-
-.cep_botao button {
-    margin-left: 1em;
-    background-color: var(--cor-websalmao);
-    color: var(--cor-fontebranca);
-    border-color: var(--cor-websalmao);
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    width: 80%;
+.listagem_tabela h1 {
     text-align: center;
-    cursor: pointer;
-    transition: .3s;
-    height: 2.6em;
+    margin-top: .5em;
 }
 
-.cep_botao button:hover {
-    background-color: var(--cor-webazul);
-    border-color: var(--cor-webazul);
-    transition: .4s;
+.dt-length {
+    display: none;
 }
 
-#cidade {
-    width: 11em;
-    margin-left: .6em;
+.botoes {
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.input_uf {
-    gap: 4px;
+.back_button {
+    background-color: var(--cor-websalmao);
+    padding: 1.3em;
+    border-radius: 50px;
 }
 
-.edicao select {
-    background-color: var(--cor-fundo);
-    width: 4em;
-    height: 2.8em;
-    font-size: 16px;
-    padding-left: .6em;
+.botoes_direita {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.botao_cadastrar {
-    background: url("/assets/icons/salvar.png") no-repeat scroll 9px 8px;
+.botao_excluir {
+    background: url("/assets/icons/excluir.png") no-repeat scroll 9px 8px;
     background-color: var(--cor-websalmao);
     background-size: 1.2em;
     color: var(--cor-fontebranca);
@@ -266,11 +117,47 @@ main {
     transition: .4s;
     text-decoration: none;
     padding: 0.5em;
-    width: 15%;
+    width: 35%;
     padding-left: 1.3em;
 }
 
-.botao_cadastrar:hover{
+.botao_editar {
+    background: url("/assets/icons/editar2.png") no-repeat scroll 9px 8px;
+    background-color: var(--cor-websalmao);
+    background-size: 1.2em;
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 35%;
+    padding-left: 1.3em;
+}
+
+.botao_relacionar {
+    background: url("/assets/icons/relacionar.png") no-repeat scroll 9px 8px;
+    background-color: var(--cor-websalmao);
+    background-size: 1.2em;
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 40%;
+    padding-left: 1.3em;
+}
+
+.back_button:hover, .botao_excluir:hover, .botao_editar:hover, .botao_relacionar:hover{
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;
@@ -282,52 +169,11 @@ main {
         margin-left: 23em;
     }
 
-    .edicao {
-        width: 65em;
-        height: 40em;
-    }
-
-    .titulo_edicao h3 {
-        padding-right: 3.5em;
-    }
-
-    .edicao_fornecedor {
+    .visualizar {
         width: 60em;
-        height: 30em;
     }
 
-    .formulario_dados-UM,
-    .formulario_endereco-UM,
-    .formulario_endereco-DOIS {
-        gap: 2em;
-        padding-top: 1em;
-        width: 44%
-    }
-
-    .formulario_dados-DOIS {
-        gap: 2em;
-        padding-top: 2em;
-        width: 44%
-    }
-
-    .cep_botao button {
-        width: 33%;
-    }
-
-    #cep {
-        margin-left: 7em;
-    }
-
-    #complemento {
-        width: 17.6em;
-    }
-
-    #bairro  {
-        width: 17.6em;
-    }
-
-    #cidade {
-        width: 11em;
-        margin-left: 5em;
+    .listagem_tabela {
+        width: 55em;
     }
 }
