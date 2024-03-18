@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="/css/Paginas/Cliente/ListagemCliente.css" class="text/css">
+
+    <link rel="stylesheet" href="/css/Paginas/Catalogo/ClienteCatalogo.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <!--DataTables-->
@@ -37,8 +37,8 @@
                         <img class="menu_vector" src="/assets/menu/vector.png">
                     </div>
                     <ul class="menu_options">
-                        <a href="/pages/Catalogo/ListagemCatalogo.html"><li>Consultar</li></a>
-                        <a href="/pages/Catalogo/CadastroCatalogo.html"><li>Cadastrar catálogo</li></a>
+                        <a href="ListagemCatalogo.html"><li>Consultar</li></a>
+                        <a href="CadastroCatalogo.html"><li>Cadastrar catálogo</li></a>
                     </ul>
                 </li>
                 <li class="menu_item pedido">
@@ -67,8 +67,8 @@
                         <img class="menu_vector" src="/assets/menu/vector.png">
                     </div>
                     <ul class="menu_options">
-                        <a href="ListagemCliente.html"><li>Consultar</li></a>
-                        <a href="CadastroCliente.html"><li>Cadastrar cliente</li></a>
+                        <a href="/pages/Cliente/ListagemCliente.html"><li>Consultar</li></a>
+                        <a href="/pages/Cliente/CadastroCliente.html"><li>Cadastrar cliente</li></a>
                     </ul>
                 </li>
                 <li class="menu_item categoria">
@@ -95,89 +95,79 @@
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
 
-        <section class="listagem">
-        <div class="titulo_listagem">
-            <h1>Clientes</h1>
-            <hr/>
+        <div class="botao_voltar">
+        <a href="VisualizacaoCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
         </div>
-        <div class="listagem_tabela">
-            <table id="listar_fornecedor" class="display" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>CNPJ</th>
-                        <th>Cliente</th>
-                        <th>Status</th>
-                        <th>Detalhes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>18.346.678/0190-00</td>
-                        <td>TechNova Solutions</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>19.346.678/0190-00</td>
-                        <td>VerdeWave Energy</td>
-                        <td>Inativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>20.346.678/0190-00</td>
-                        <td>SkyQuest Industries</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>21.346.678/0190-00</td>
-                        <td>AquaGlow Technologies</td>
-                        <td>Inativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>22.346.678/0190-00</td>
-                        <td>Nexus Innovations</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>23.346.678/0190-00</td>
-                        <td>StellarSys Solutions</td>
-                        <td>Ativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>24.346.678/0190-00</td>
-                        <td>Trevor Philips Enterprises</td>
-                        <td>Inativo</td>
-                        <td>
-                            <a href="EdicaoCliente.html" class="botao_expandir">Expandir</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
+        <section class="visualizar">
+            <div class="titulo_visualizar">
+                <h1>Catálogo - Clientes</h1>
+                <hr/>
+            </div>
+            <div class="info">
+                <div class="show_fornecedor">
+                    <h2>Fornecedor: </h2>
+                    <h2>EcoSync Ventures</h2>
+                </div>
+                <div class="show_relacionamento">
+                    <h2>Catálogo:</h2>
+                    <h2>Serviços Sudeste</h2>
+                </div>
+            </div>
+            <div class="listagem_tabela">
+                <table id="listar_fornecedor" class="display" style="width: 100%;">
+                    <h1>Clientes Vinculados ao Catálogo</h1>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>CNPJ</th>
+                            <th>Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
+                            <td>18.345.678/0190-00</td>
+                            <td>TechNova Solutions</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
+                            <td>21.345.678/0190-00</td>
+                            <td>AquaGlow Technologies</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
+                            <td>22.345.678/0190-00</td>
+                            <td>Cliente X</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
+                            <td>23.345.678/0190-00</td>
+                            <td>Cliente X</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <input value="Remover Clientes" type="submit" class="botao_excluirItem"></input>
+            <div class="botoes">
+                    <a href="AdicaoItensCatalogo.html" class="botao_addItens">Novos Clientes</a>
+                    <input value="Concluir" type="submit" class="botao_concluir"></input>
+            </div>
         </section>
-
-        <script src="/js/home.js"></script> <!--Efeito MENU-->
-
-        <script> // Configuração DataTable
+        <script src="/js/home.js"></script>
+        <script> 
+            // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
-                searching: true,
-                lengthMenu: [5],
+                searching: false,
+                lengthMenu: [4],
                 paging: true,
                 ordering: false,
                 language: {
@@ -190,7 +180,6 @@
                 },
             });
         </script>
-
     </main>
 </body>
 </html>
