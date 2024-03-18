@@ -11,8 +11,8 @@ main {
 
 .botao_voltar {
     position: absolute;
-    margin-bottom: 35em;
-    margin-left: 15em;
+    margin-bottom: 40em;
+    margin-left: 18em;
     transition: .4s;
 }
 
@@ -86,7 +86,6 @@ main {
 }
 
 .formulario_input input {
-    background-color: var(--cor-fundo);
     width: 80%;
     height: 2.8em;
     font-size: 16px;

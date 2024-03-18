@@ -80,12 +80,7 @@ main {
     gap: 12px;
 }
 
-.edicao label {
-    padding-left: .4em;
-}
-
 .formulario_dados input {
-    background-color: var(--cor-fundo);
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;

@@ -26,7 +26,7 @@ main {
 .cadastro {
     background-color: var(--principal-rgba);
     width: 55em;
-    height: 38em;
+    height: 36em;
     padding: 1.5em 2em .4em 2em;
     align-items: center;
     margin: auto;
@@ -66,13 +66,17 @@ main {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     width: 50em;
-    height: 23em;
+    height: 22.1em;
     margin-top: .1em;
 }
 
 .listagem_tabela h1 {
     text-align: center;
     margin-top: .5em;
+}
+
+.dt-length {
+    display: none;
 }
 
 .listagem_tabela input {
@@ -90,7 +94,7 @@ main {
 
 .back_button {
     background-color: var(--cor-websalmao);
-    padding: 1.2em;
+    padding: 1em;
     border-radius: 50px;
 }
 

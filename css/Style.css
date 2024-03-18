@@ -7,14 +7,16 @@
     box-sizing: border-box;
 }
 
-* input {
+* input, select, textarea {
     border: none;
     border-radius: 10px;
+    background-color: var(--cor-fundo);
 }
 
 * label {
     font-size: 17px;
     font-weight: bold;
+    padding-left: .4em;
 }
 
 :root {

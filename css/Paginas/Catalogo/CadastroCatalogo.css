@@ -26,8 +26,8 @@ main {
 .cadastro {
     background-color: var(--principal-rgba);
     width: 55em;
-    height: 38em;
-    padding: 1.5em 2em .4em 2em;
+    height: 36em;
+    padding: 1.5em 2em .2em 2em;
     align-items: center;
     margin: auto;
     border-radius: 20px;
@@ -61,7 +61,6 @@ main {
 }
 
 .cadastro select {
-    background-color: var(--cor-fundo);
     width: 13em;
     height: 2.8em;
     font-size: 16px;
@@ -69,12 +68,7 @@ main {
     border-radius: 10px;
 }
 
-.input label {
-    padding-left: .4em;
-}
-
 .input input {
-    background-color: var(--cor-fundo);
     width: 15em;
     height: 2.8em;
     font-size: 16px;

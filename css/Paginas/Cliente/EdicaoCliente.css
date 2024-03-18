@@ -193,7 +193,6 @@ main {
 }
 
 .edicao_cliente input {
-    background-color: var(--cor-fundo);
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
@@ -247,7 +246,6 @@ width: 14em;
 }
 
 .edicao select {
-    background-color: var(--cor-fundo);
     width: 4em;
     height: 2.8em;
     font-size: 16px;
