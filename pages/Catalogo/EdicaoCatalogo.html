@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Catalogo/VisualizacaoCatalogo.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Catalogo/EdicaoCatalogo.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <!--DataTables-->
@@ -96,12 +96,12 @@
         </nav>
 
         <div class="botao_voltar">
-        <a href="ListagemCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
+        <a href="VisualizacaoCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
         </div>
 
         <section class="visualizar">
             <div class="titulo_visualizar">
-                <h1>Visualizar Catálogo</h1>
+                <h1>Editar Catálogo</h1>
                 <hr/>
             </div>
             <div class="info">
@@ -116,9 +116,12 @@
             </div>
             <div class="listagem_tabela">
                 <table id="listar_fornecedor" class="display" style="width: 100%;">
-                    <h1>Serviços Sudeste</h1>
+                    <h1>
+                        <input type="text" value="Serviços Sudeste" class="input_titulo"/>
+                    </h1>
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Tipo</th>
                             <th>Item</th>
                             <th>Categoria</th>
@@ -127,54 +130,89 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Instalação WI-FI Residencial</td>
                             <td>Tecnologia</td>
-                            <td>R$ 150,00</td>
+                            <td>
+                                <input type="text" value="R$ 150,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Limpeza de Virus e Malware</td>
                             <td>Tecnologia</td>
-                            <td>R$ 100,00</td>
+                            <td>
+                                <input type="text" value="R$ 100,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Conf. de Segurança de Rede</td>
                             <td>Tecnologia</td>
-                            <td>R$ 500,00</td>
+                            <td>
+                                <input type="text" value="R$ 500,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Backup e Recuperação de Dados</td>
                             <td>Tecnologia</td>
-                            <td>R$ 200,00</td>
+                            <td>
+                                <input type="text" value="R$ 200,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>    
                             <td>Manutenção Preventiva de Rede</td>
                             <td>Tecnologia</td>
-                            <td>R$ 300,00</td>
+                            <td>
+                                <input type="text" value="R$ 300,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Otimização de Servidores</td>
                             <td>Tecnologia</td>
-                            <td>R$ 150,00</td>
+                            <td>
+                                <input type="text" value="R$ 150,00"/>
+                            </td>
                         </tr>
                         <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" />
+                            </td>
                             <td>Serviço</td>
                             <td>Cons. em Segurança Cibernética</td>
                             <td>Tecnologia</td>
-                            <td>R$ 600,00</td>
+                            <td>
+                                <input type="text" value="R$ 600,00"/>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <input value="Excluir itens" type="submit" class="botao_excluirItem"></input>
             <div class="botoes">
-                <input value="Excluir" type="submit" class="botao_excluir"></input>
-                <a href="EdicaoCatalogo.html" class="botao_editar">Editar</a>
-                <a href="RelacionamentoCatalogo.html" class="botao_relacionar">Relacionar</a>
+                    <a href="EdicaoCatalogo.html" class="botao_addItens">Adicionar Itens</a>
+                    <input value="Concluir" type="submit" class="botao_concluir"></input>
             </div>
         </section>
         <script src="/js/home.js"></script>
@@ -182,7 +220,7 @@
             // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
                 searching: false,
-                lengthMenu: [6],
+                lengthMenu: [5],
                 paging: true,
                 ordering: false,
                 language: {
