@@ -83,6 +83,10 @@ main {
     margin-top: 1em;
 }
 
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
 .next_button {
     position: relative;
     margin-left: 45em;

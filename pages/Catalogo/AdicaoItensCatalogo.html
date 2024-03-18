@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Catalogo/EdicaoCatalogo.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Catalogo/AdicaoItensCatalogo.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <!--DataTables-->
@@ -96,12 +96,15 @@
         </nav>
 
         <div class="botao_voltar">
-        <a href="VisualizacaoCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
+        <a href="EdicaoCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
         </div>
 
         <section class="visualizar">
             <div class="titulo_visualizar">
-                <h1>Editar Catálogo</h1>
+                <div class="titulo_catalogo">
+                    <h1>Editar Catálogo </h1>
+                    <h3>- Adicionar Itens</h3>
+                </div>
                 <hr/>
             </div>
             <div class="info">
@@ -116,110 +119,65 @@
             </div>
             <div class="listagem_tabela">
                 <table id="listar_fornecedor" class="display" style="width: 100%;">
-                    <h1>
-                        <input type="text" value="Serviços Sudeste" class="input_titulo"/>
-                    </h1>
                     <thead>
                         <tr>
-                            <th></th>
                             <th>Tipo</th>
                             <th>Item</th>
                             <th>Categoria</th>
-                            <th>Valor</th>
+                            <th>Incluir</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <input type="checkbox" id="scales" name="scales" />
-                            </td>
                             <td>Serviço</td>
-                            <td>Instalação WI-FI Residencial</td>
+                            <td>Conf. VPN Empresarial</td>
                             <td>Tecnologia</td>
                             <td>
-                                <input type="text" value="R$ 150,00"/>
+                                <input type="checkbox" id="scales" name="scales" />
                             </td>
                         </tr>
                         <tr>
+                            <td>Produto</td>
+                            <td>Roteador WI-FI</td>
+                            <td>Eletrônicos</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
-                            </td>
-                            <td>Serviço</td>
-                            <td>Limpeza de Virus e Malware</td>
-                            <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 100,00"/>
                             </td>
                         </tr>
                         <tr>
+                            <td>Produto</td>
+                            <td>Product Eletronic</td>
+                            <td>Eletrônicos</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
-                            </td>
-                            <td>Serviço</td>
-                            <td>Conf. de Segurança de Rede</td>
-                            <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 500,00"/>
                             </td>
                         </tr>
                         <tr>
+                            <td>Produto</td>
+                            <td>Something Else</td>
+                            <td>Eletrônicos</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
-                            </td>
-                            <td>Serviço</td>
-                            <td>Backup e Recuperação de Dados</td>
-                            <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 200,00"/>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <input type="checkbox" id="scales" name="scales" />
-                            </td>
-                            <td>Serviço</td>    
-                            <td>Manutenção Preventiva de Rede</td>
-                            <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 300,00"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" id="scales" name="scales" />
-                            </td>
                             <td>Serviço</td>
-                            <td>Otimização de Servidores</td>
+                            <td>Recuperação de Senhas</td>
                             <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 150,00"/>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
-                            </td>
-                            <td>Serviço</td>
-                            <td>Cons. em Segurança Cibernética</td>
-                            <td>Tecnologia</td>
-                            <td>
-                                <input type="text" value="R$ 600,00"/>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <input value="Excluir itens" type="submit" class="botao_excluirItem"></input>
-            <div class="botoes">
-                    <a href="AdicaoItensCatalogo.html" class="botao_addItens">Adicionar Itens</a>
-                    <input value="Concluir" type="submit" class="botao_concluir"></input>
-            </div>
+            <input value="Concluir" type="submit" class="botao_concluir"></input>
         </section>
         <script src="/js/home.js"></script>
         <script> 
             // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
-                searching: false,
+                searching: true,
                 lengthMenu: [5],
                 paging: true,
                 ordering: false,
