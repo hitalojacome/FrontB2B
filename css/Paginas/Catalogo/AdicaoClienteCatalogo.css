@@ -56,7 +56,6 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    
 }
 
 .show_fornecedor, .show_relacionamento {
@@ -70,13 +69,15 @@ main {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     width: 50em;
-    height: 24em;
+    height: 26.5em;
     margin-top: .1em;
 }
 
 .listagem_tabela h1 {
     text-align: center;
+    padding-bottom: .4em;
     margin-top: .5em;
+    border-bottom: 3px solid;
 }
 
 .dt-length {
@@ -85,46 +86,6 @@ main {
 
 input[type="checkbox"] {
     transform: scale(1.5);
-}
-
-.botao_excluirItem {
-    background-color: var(--cor-websalmao);
-    color: var(--cor-fontebranca);
-    border-color: var(--cor-websalmao);
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    transition: .4s;
-    text-decoration: none;
-    padding: 0.5em;
-    width: 20%;
-    margin-right: 35em;
-    margin-bottom: 0;
-}
-
-.botoes {
-    width: 38%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-left: 31em;
-}
-
-.botao_addItens {
-    background-color: var(--cor-websalmao);
-    color: var(--cor-fontebranca);
-    border-color: var(--cor-websalmao);
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    transition: .4s;
-    text-decoration: none;
-    padding: 0.5em;
-    width: 60%;
 }
 
 .botao_concluir {
@@ -139,10 +100,11 @@ input[type="checkbox"] {
     transition: .4s;
     text-decoration: none;
     padding: 0.5em;
-    width: 35%;
+    width: 13%;
+    margin-left: 38.7em;
 }
 
-.botao_excluirItem:hover, .botao_addItens:hover, .botao_concluir:hover{
+.botao_concluir:hover{
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;

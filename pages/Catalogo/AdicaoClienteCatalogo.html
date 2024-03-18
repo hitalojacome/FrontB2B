@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Catalogo/AdicaoItensCatalogo.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Catalogo/AdicaoClienteCatalogo.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
     <!--DataTables-->
@@ -96,12 +96,12 @@
         </nav>
 
         <div class="botao_voltar">
-        <a href="EdicaoCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
+        <a href="ClienteCatalogo.html"><img  src="/assets/icons/seta-voltar.png"></a>
         </div>
 
         <section class="visualizar">
             <div class="titulo_visualizar">
-                <h1>Editar Catálogo - Adicionar Itens </h1>
+                <h1>Relacionamento - Catálogo e Clientes</h1>
                 <hr/>
             </div>
             <div class="info">
@@ -110,57 +110,52 @@
                     <h2>EcoSync Ventures</h2>
                 </div>
                 <div class="show_relacionamento">
-                    <h2>Catálogo: </h2>
+                    <h2>Catálogo:</h2>
                     <h2>Serviços Sudeste</h2>
                 </div>
             </div>
             <div class="listagem_tabela">
                 <table id="listar_fornecedor" class="display" style="width: 100%;">
+                    <h1>Selecione os clientes que terão acesso ao catálogo</h1>
                     <thead>
                         <tr>
-                            <th>Tipo</th>
-                            <th>Item</th>
-                            <th>Categoria</th>
-                            <th>Incluir</th>
+                            <th>CNPJ</th>
+                            <th>Cliente</th>
+                            <th>Vincular</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Serviço</td>
-                            <td>Conf. VPN Empresarial</td>
-                            <td>Tecnologia</td>
+                            <td>19.345.678/0190-00</td>
+                            <td>VerdeWave Energy</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
                             </td>
                         </tr>
                         <tr>
-                            <td>Produto</td>
-                            <td>Roteador WI-FI</td>
-                            <td>Eletrônicos</td>
+                            <td>20.345.678/0190-00</td>
+                            <td>SkyQuest Industries</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
                             </td>
                         </tr>
                         <tr>
-                            <td>Produto</td>
-                            <td>Product Eletronic</td>
-                            <td>Eletrônicos</td>
+                            <td>22.345.678/0190-00</td>
+                            <td>Nexus Innovations</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
                             </td>
                         </tr>
                         <tr>
-                            <td>Produto</td>
-                            <td>Something Else</td>
-                            <td>Eletrônicos</td>
+                            <td>23.345.678/0190-00</td>
+                            <td>StellarSys Solutions</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
                             </td>
                         </tr>
                         <tr>
-                            <td>Serviço</td>
-                            <td>Recuperação de Senhas</td>
-                            <td>Tecnologia</td>
+                            <td>24.345.678/0190-00</td>
+                            <td>Trevor Philips Enterprises</td>
                             <td>
                                 <input type="checkbox" id="scales" name="scales" />
                             </td>
@@ -168,14 +163,14 @@
                     </tbody>
                 </table>
             </div>
-            <input value="Concluir" type="submit" class="botao_concluir"></input>
+                <input value="Concluir" type="submit" class="botao_concluir"></input>
         </section>
         <script src="/js/home.js"></script>
         <script> 
             // Configuração DataTable
             var table = new DataTable('#listar_fornecedor', {
                 searching: true,
-                lengthMenu: [5],
+                lengthMenu: [4],
                 paging: true,
                 ordering: false,
                 language: {
