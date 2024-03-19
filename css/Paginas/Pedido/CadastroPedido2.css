@@ -1,0 +1,119 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+@import url(/css/datatables.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--cor-fontebranca);
+}
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}
+
+.timeline {
+    width: 50em;
+    margin: auto;
+}
+
+.cadastro {
+    background-color: var(--principal-rgba);
+    width: 55em;
+    height: 41em;
+    padding: 1.5em 2em .4em 2em;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo_cadastro {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_cadastro h1 {
+    padding: .1em;
+}
+
+.cadastro hr {
+    border-width: 0.1em;
+    border-color: var(--cor-fontebranca);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.cabecalho {
+    display: flex;
+    text-align: center;
+    gap: 2em;
+    padding: .5em 0;
+}
+
+.listagem_tabela {
+    background-color: var(--cor-principal);
+    border: 3px solid #fff;
+    width: 50em;
+    height: 25em;
+    margin-top: .1em;
+}
+
+.listagem_tabela h1 {
+    text-align: center;
+    padding: .3em 0;
+    border-bottom: 3px solid var(--cor-fontebranca);
+}
+
+.listagem_tabela input {
+    border-radius: 0;
+    padding: .5em;
+    text-align: center;
+    width: 8em;
+}
+
+.botoes {
+    display: flex;
+    gap: 40em;
+    padding: .5em 2em 0 2em;
+    align-items: center;
+}
+
+.back_button, .next_button {
+    background-color: var(--cor-websalmao);
+    padding: 1.3em;
+    border-radius: 50px;
+}
+
+.back_button:hover ,.next_button:hover {
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .timeline {
+        margin-top: 4em;
+    }
+
+    .cadastro {
+        height: 44em;
+        margin-bottom: 5em;
+        justify-content: space-between;
+    }
+
+    .listagem_tabela {
+        height: 25em;
+    }
+}
