@@ -1,0 +1,74 @@
+@import url(/css/Style.css);
+@import url(/css/Paginas/Menu.css);
+
+main {
+    background-image: url(/assets/Fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--cor-fontebranca);
+}
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}
+
+.timeline {
+    width: 50em;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.cadastro {
+    background-color: var(--principal-rgba);
+    width: 55em;
+    height: 30em;
+    padding: 1.5em 2em .4em 2em;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3em;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cadastro p {
+    font-size: 24px;
+}
+
+.botao {
+    background-color: var(--cor-websalmao);
+    color: var(--cor-fontebranca);
+    border-color: var(--cor-websalmao);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0.6em;
+    width: 100%;
+}
+
+.botao:hover{
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+@media screen and (min-width:1728px) {
+    .timeline {
+        margin-bottom: 10em;
+    }
+
+    .cadastro {
+        margin-bottom: 5em;
+    }
+}
