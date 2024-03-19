@@ -123,13 +123,10 @@ input[type="checkbox"] {
 
     .listagem_tabela {
         width: 55em;
+        height: 27em;
     }
 
-    .botao_excluirItem {
-        margin-right: 39em;
-    }
-
-    .botoes {
-        margin-left: 34em;
+    .botao_concluir {
+        margin-bottom: 1em;
     }
 }
