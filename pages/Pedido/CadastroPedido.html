@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/Paginas/Pedido/CadastroPedido.css" class="text/css">
+    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
+    <!--DataTables-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
+    <title>Catálogo B2B</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <img class="WSLogo" src="/assets/WSLogo.png">
+            <ul class="menu">
+                <li class="menu_home">
+                    <a href="../Home.html" class="menu_botao home">
+                        <img class="menu_logo-home" src="/assets/menu/Home-logo.png"><p>Home</p>
+                    </a>
+                </li>
+                <li class="menu_usuario">
+                    <a href="/pages/Usuario/ListagemUsuario.html" class="menu_botao usuario">
+                        <img class="menu_logo usuario" src="/assets/menu/User-logo.png"><p>Usuários</p>
+                    </a>
+                </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png"><p>Catálogos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Catalogo/ListagemCatalogo.html"><li>Consultar</li></a>
+                        <a href="/pages/Catalogo/CadastroCatalogo.html"><li>Cadastrar catálogo</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png"><p>Pedidos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="ListagemPedido.html"><li>Consultar</li></a>
+                        <a href="CadastroPedido.html"><li>Realizar pedido</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item fornecedor">
+                    <div class="menu_botao fornecedor">
+                        <img class="menu_logo fornecedor" src="/assets/menu/Fornecedor-logo.png"><p>Fornecedores</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Fornecedor/ListagemFornecedor.html"><li>Consultar</li></a>
+                        <a href="/pages/Fornecedor/CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item cliente">
+                    <div class="menu_botao cliente">
+                        <img class="menu_logo cliente" src="/assets/menu/Cliente-logo.png"><p>Clientes</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Cliente/ListagemCliente.html"><li>Consultar</li></a>
+                        <a href="/pages/Cliente/CadastroCliente.html"><li>Cadastrar cliente</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item categoria">
+                    <div class="menu_botao categoria">
+                        <img class="menu_logo categoria" src="/assets/menu/Categoria-logo.png"><p>Categorias</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Categoria/ListagemCategoria.html"><li>Consultar</li></a>
+                        <a href="/pages/Categoria/CadastroCategoria.html"><li>Cadastrar categoria</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item item">
+                    <div class="menu_botao item">
+                        <img class="menu_logo item" src="/assets/menu/Item-logo.png"><p>Itens</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Item/ListagemItem.html"><li>Consultar</li></a>
+                        <a href="/pages/Item/CadastroItem.html"><li>Cadastrar item</li></a>
+                    </ul>
+                </li>
+            </ul>
+            <a href="/Index.html" class="botao_sair">Encerrar</a>
+        </nav>
+        <section class="geral">
+            <img class="timeline" src="/assets/timeline_pedido1.png" alt="timeline passo 1" />
+            <div class="cadastro">
+                <div class="titulo_cadastro">
+                    <h1>Realizar Pedido</h1>
+                    <hr/>
+                </div>
+                <div class="input_cliente">
+                    <label for="cliente">Cliente:</label><br>
+                    <select value="technova" id="cliente" name="cliente">
+                        <option value="technova">TechNova Solutions</option>
+                        <option value="verdewave">VerdeWave Energy</option>
+                        <option value="skyquest">SkyQuest Industries</option>
+                    </select>
+                </div>
+                <div class="listagem_tabela">
+                    <table id="listar_fornecedor" class="display" style="width: 100%;">
+                        <h1>Selecione o catálogo</h1>
+                        <thead>
+                            <tr>
+                                <th>Fornecedor</th>
+                                <th>Descrição</th>
+                                <th>Selecionar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Empresa LTDA</td>
+                                <td>Eletrônicos</td>
+                                <td>
+                                    <a href="CadastroPedido2.html" class="next_button">
+                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EcoSync Ventures</td>
+                                <td>Serviços Sudeste</td>
+                                <td>
+                                    <a href="CadastroPedido2.html" class="next_button">
+                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Empresa LTDA</td>
+                                <td>Formatação SO</td>
+                                <td>
+                                    <a href="CadastroPedido2.html" class="next_button">
+                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script src="/js/home.js"></script>
+        <script> 
+            // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: true,
+                lengthMenu: [3],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    sEmptyTable: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    sInfoEmpty: '',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
+    </main>
+</body>
+</html>
