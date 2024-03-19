@@ -58,18 +58,12 @@ main {
     padding-left: .8em;
 }
 
-.cnpj_view {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.cnpj_view input {
-    width: 11em;
-}
-
-.cnpj_view p {
-    font-size: 17px;
+.input_fornecedor select {
+    width: 18em;
+    height: 2.8em;
+    font-size: 16px;
+    padding-left: .8em;
+    border-radius: 10px;
 }
 
 .botao_cadastrar {

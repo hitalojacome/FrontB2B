@@ -98,12 +98,14 @@
                 </div>
                 <div class="cadastro_categoria-dados">
                     <form class="formulario">
-                        <div class="cnpj_view">
-                            <div>
-                                <label for="cnpj_fornecedor">CNPJ do fornecedor:</label><br>
-                                <input placeholder="CNPJ" type="text" id="cnpj_fornecedor" name="cnpj_fornecedor">
-                            </div>
-                            <p class="razao_social"><u>- EcoSync Ventures</u></p>
+                        <div class="input_fornecedor">
+                            <label for="uf">Fornecedor:</label><br>
+                            <select value="Empresa Ltda" id="fornecedor" name="fornecedor">
+                                <option value="null">Selecione...</option>
+                                <option value="empresaltda">Empresa LTDA</option>
+                                <option value="nexusdata">NexusData Labs</option>
+                                <option value="ecosync">Ecosync Ventures</option>
+                            </select>
                         </div>
                         <div>
                             <label for="descricao">Descrição:</label><br>

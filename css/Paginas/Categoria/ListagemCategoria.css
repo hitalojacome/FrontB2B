@@ -50,6 +50,10 @@ main {
     margin-top: 1em;
 }
 
+.coluna_editar {
+    width: 10em;
+}
+
 table a {
     border: none;
 }
@@ -57,7 +61,6 @@ table a {
 table a:hover {
     background-color: transparent;
 }
-
 
 .botao_salvar {
     background: url("/assets/icons/salvar.png") no-repeat scroll 9px 8px;

@@ -13,7 +13,7 @@ main {
 .botao_voltar {
     position: absolute;
     margin-bottom: 40em;
-    margin-left: 18em;
+    margin-left: 15em;
     transition: .4s;
 }
 

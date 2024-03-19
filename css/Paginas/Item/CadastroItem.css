@@ -67,22 +67,6 @@ main {
     padding-left: .8em;
 }
 
-.cnpj_view {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.cnpj_view input {
-    width: 11em;
-}
-
-.razao_social {
-    font-size: 19px;
-    margin-top: 1em;
-    text-decoration: dotted;
-}
-
 #descricao {
     height: 10em;
     resize: none;
@@ -135,7 +119,7 @@ main {
     }
 
     .cadastro input {
-        height: 4em;
+        height: 3.6em;
     }
 
     .formulario_dados, .formulario_dropDown {
@@ -151,6 +135,6 @@ main {
     }
 
     .cadastro select {
-        height: 4em;
+        height: 3.6em;
     }
 }
