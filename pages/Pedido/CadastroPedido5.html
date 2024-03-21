@@ -6,13 +6,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/css/Paginas/Pedido/CadastroPedido.css" class="text/css">
+    <link rel="stylesheet" href="/css/Paginas/Pedido/CadastroPedido5.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
-
-    <!--DataTables-->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
-
     <title>Catálogo B2B</title>
 </head>
 
@@ -94,84 +89,16 @@
             </ul>
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
-        
+
         <section class="geral">
-            <img class="timeline" src="/assets/timeline_pedido1.png" alt="timeline passo 1" />
+            <img class="timeline" src="/assets/timeline_pedido5.png" alt="timeline passo 2" />
             <div class="cadastro">
-                <div class="titulo_cadastro">
-                    <h1>Realizar Pedido</h1>
-                    <hr/>
-                </div>
-                <div class="input_cliente">
-                    <label for="cliente">Cliente:</label><br>
-                    <select value="technova" id="cliente" name="cliente">
-                        <option value="null">Selecione...</option>
-                        <option value="technova">TechNova Solutions</option>
-                        <option value="verdewave">VerdeWave Energy</option>
-                        <option value="skyquest">SkyQuest Industries</option>
-                    </select>
-                </div>
-                <div class="listagem_tabela">
-                    <table id="listar_fornecedor" class="display" style="width: 100%;">
-                        <h1>Selecione o catálogo do seu pedido</h1>
-                        <thead>
-                            <tr>
-                                <th>Fornecedor</th>
-                                <th>Descrição</th>
-                                <th>Selecionar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Empresa LTDA</td>
-                                <td>Eletrônicos</td>
-                                <td>
-                                    <a href="CadastroPedido2.html" class="next_button">
-                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EcoSync Ventures</td>
-                                <td>Serviços Sudeste</td>
-                                <td>
-                                    <a href="CadastroPedido2.html" class="next_button">
-                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Empresa LTDA</td>
-                                <td>Formatação SO</td>
-                                <td>
-                                    <a href="CadastroPedido2.html" class="next_button">
-                                        <img src="/assets/icons/next.png" alt="botao para avancar" />
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <img src="/assets/icons/concluido.png" alt="Concluido" class="concluido">
+                <p>Pedido <strong>0001</strong> realizado!</p>
+                <a href="ListagemPedido.html"><input value="Pedidos" type="submit"class="botao"></input></a>
             </div>
         </section>
         <script src="/js/home.js"></script>
-        <script> 
-            // Configuração DataTable
-            var table = new DataTable('#listar_fornecedor', {
-                searching: true,
-                lengthMenu: [3],
-                paging: true,
-                ordering: false,
-                language: {
-                    lengthMenu: '',
-                    info: 'Página _PAGE_ de _PAGES_',
-                    sEmptyTable: 'Não há registros',
-                    searchPlaceholder: 'Busca fácil',
-                    sInfoEmpty: '',
-                    search: 'Filtrar: ',
-                },
-            });
-        </script>
     </main>
 </body>
 </html>

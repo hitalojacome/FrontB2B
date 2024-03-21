@@ -1,51 +1,20 @@
 @import url(/css/Style.css);
 @import url(/css/Paginas/Menu.css);
-@import url(/css/datatables.css);
 
 main {
-    background-image: url(/assets/Fundo-Pedido3.png);
-    background-color: var(--cor-fundo);
-    background-size: cover;
+    background-image: url(/assets/Fundo.png);
     color: var(--cor-fontebranca);
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-}
-
-.WSLogo {
-    width: 74%;
-    height: 19%;
-}
-
-.botao_sair {
-    width: 53.6%;
-}
-
 .geral {
-    position: relative;
-    left: 8%;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 20px;
     margin: auto;
-    margin-top: 1em;
-}
-
-.botao_voltar {
-    position: absolute;
-    margin-bottom: 95em;
-    margin-left: 16em;
-    transition: .4s;
-}
-
-.botao_voltar img:hover {
-    scale: 1.2;
-    transition: .4s;
 }
 
 .timeline {
@@ -75,10 +44,11 @@ main {
     border: 5px solid var(--cor-fontebranca);
     border-radius: 20px;
     width: 100%;
+    height: 34em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 1em 2em 1em 2em;
+    gap: .5em;
+    padding: 1em 2em .5em 2em;
 }
 
 .titulo_cabecalho {
@@ -98,7 +68,6 @@ main {
     width: 100%;
     padding: 1em;
 }
-
 .cabecalho-cliente h2, .cabecalho-fornecedor h2 {
     margin-bottom: .2em;
     margin-left: .5em;
@@ -114,141 +83,36 @@ main {
     display: flex;
 }
 
-.itens_pedido {
+.botoes {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    padding: 1.5em 2em;
-    font-size: 17px;
-    background-color: var(--principal-rgba);
-    border: 5px solid var(--cor-fontebranca);
-    border-radius: 20px;
+    gap: 35em;
+    padding: 0;
+    align-items: center;
 }
 
-.listagem_tabela {
-    background-color: var(--cor-principal);
-    border: 3px solid #fff;
-    margin-top: .1em;
-    width: 100%;
-    height: 25em;
-}
-
-.listagem_tabela h1 {
-    text-align: center;
-    margin-top: .5em;
-}
-
-.dt-length {
-    display: none;
-}
-
-.listagem_tabela input {
-    width: 4em;
-    border-radius: 0;
-    padding: .5em;
-    text-align: center;
-}
-
-.total {
-    background-color: var(--principal-rgba);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1em;
-    margin: auto;
-    margin-bottom: 1em;
-    padding: .8em 2em 1em 2em;
-    border: 5px solid var(--cor-fontebranca);
-    border-radius: 20px;
-    font-size: 18px;
-    width: 80%;
-    height: 21em;
-}
-
-.titulo_total hr {
-    border-color: var(--cor-fontebranca);
-    border-width: 0.1em;
-    border-style: solid;
-    border-radius: 5px;
-    font-size: 23px;
-}
-
-.info_resumo {
-    background-color: var(--cor-principal);
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: .6em 4em;
-    border: 3px solid #fff;
-    border-radius: 20px;
-    font-size: 20px;
-    width: 100%;
-    height: auto;
-}
-
-.valores {
-    padding: 1em 0;
-}
-
-.valor_produto, .valor_servico, .valor_total {
-    display: flex;
-    justify-content: space-between;
-}
-
-.valor_total {
-    padding: 1em 0;
-}
-
-.botao_confirmar {
+.back_button, .next_button {
     background-color: var(--cor-websalmao);
-    color: var(--cor-fontebranca);
-    border-color: var(--cor-websalmao);
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    transition: .4s;
-    text-decoration: none;
-    padding: 0.6em;
-    width: 21%;
-    margin: auto;
+    padding: 1em;
+    border-radius: 50%;
 }
 
-.botao_confirmar:hover{
+.back_button:hover ,.next_button:hover {
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;
 }
 
 @media screen and (min-width:1728px) {
-    .botao_voltar {
-        margin-left: 25em;
-    }
-
-    .geral {
-        margin-top: 0;
-    }
-
-    .sidebar {
-        width: 18em;
-    }
-
-    .WSLogo {
-        width: 80%;
-        height: 23.7%;
-    }
-
     .timeline {
-        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
-    .geral {
-        width: 60em;
+    .cabecalho {
+        height: 36em;
+        gap: 1em;
     }
 
-    .listagem_tabela {
-        height: 25em;
+    .botoes {
+        gap: 38em;
     }
 }

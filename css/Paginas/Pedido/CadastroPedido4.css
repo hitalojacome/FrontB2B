@@ -1,48 +1,141 @@
 @import url(/css/Style.css);
 @import url(/css/Paginas/Menu.css);
+@import url(/css/datatables.css);
 
 main {
     background-image: url(/assets/Fundo.png);
     background-size: cover;
-    color: var(--cor-fontebranca);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    color: var(--cor-fontebranca);
 }
 
 .geral {
     display: flex;
     flex-direction: column;
-    margin: auto;
     gap: 30px;
+    margin: auto;
 }
 
 .timeline {
     width: 50em;
     margin: auto;
-    margin-bottom: 3em;
 }
 
-.cadastro {
+.resumo {
     display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.itens_pedido {
+    background-color: var(--principal-rgba);
+    width: 45em;
+    height: 34em;
+    padding: 1.5em 2em 0 2em;
     align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid var(--cor-fontebranca);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listagem_tabela {
+    background-color: var(--cor-principal);
+    border: 3px solid var(--cor-fontebranca);
+    width: 100%;
+    height: 27.5em;
+    margin-top: .1em;
+}
+
+.listagem_tabela h1 {
+    text-align: center;
+    margin-top: .5em;
+}
+
+.dt-length {
+    display: none;
+}
+
+.listagem_tabela img {
+    cursor: pointer;
+}
+
+.listagem_tabela input {
+    width: 4em;
+    border-radius: 0;
+    padding: .5em;
+    text-align: center;
+}
+
+.back_button {
+    padding: 1em;
+    border-radius: 50%;
+    margin: .5em 0;
+    margin-right: 37.5em;
+}
+
+.back_button:hover {
+    background-color: var(--cor-webazul);
+    border-color: var(--cor-webazul);
+    transition: .4s;
+}
+
+.total {
+    background-color: var(--principal-rgba);
+    padding: 1em;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: var(--principal-rgba);
+    gap: 1em;
     border: 5px solid var(--cor-fontebranca);
     border-radius: 20px;
+    font-size: 18px;
+    width: 22em;
+    height: 20em;
+}
+
+.titulo_total hr {
+    border-color: var(--cor-fontebranca);
+    border-width: 0.1em;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.info_resumo {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-bottom: 3em;
-    width: 55em;
-    height: 30em;
-    padding: 1.5em 2em .4em 2em;
+    padding: .6em 1em;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 10em;
 }
 
-.cadastro p {
-    font-size: 24px;
+.info_resumo h3 {
+    margin: auto;
 }
 
-.botao {
+.valores {
+    padding: 1em 0;
+}
+
+.valor_produto, .valor_servico, .valor_total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor_total {
+    padding-top: 1em;
+}
+
+.botao_confirmar {
     background-color: var(--cor-websalmao);
     color: var(--cor-fontebranca);
     border-color: var(--cor-websalmao);
@@ -51,13 +144,14 @@ main {
     font-weight: 700;
     text-align: center;
     cursor: pointer;
+    transition: .4s;
     text-decoration: none;
     padding: 0.6em;
-    width: 100%;
-    transition: .4s;
+    width: 30%;
+    margin: auto;
 }
 
-.botao:hover{
+.botao_confirmar:hover{
     background-color: var(--cor-webazul);
     border-color: var(--cor-webazul);
     transition: .4s;
@@ -66,9 +160,5 @@ main {
 @media screen and (min-width:1728px) {
     .timeline {
         margin-bottom: 8em;
-    }
-
-    .cadastro {
-        margin-bottom: 7em;
     }
 }

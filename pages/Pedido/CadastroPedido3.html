@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="/css/Paginas/Pedido/CadastroPedido3.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
-    <!--DataTables-->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
-
     <title>Catálogo B2B</title>
 </head>
 
@@ -33,36 +29,6 @@
                         <img class="menu_logo usuario" src="/assets/menu/User-logo.png">
                         <p>Usuários</p>
                     </a>
-                </li>
-                <li class="menu_item catalogo">
-                    <div class="menu_botao catalogo">
-                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png">
-                        <p>Catálogos</p>
-                        <img class="menu_vector" src="/assets/menu/vector.png">
-                    </div>
-                    <ul class="menu_options">
-                        <a href="/pages/Catalogo/ListagemCatalogo.html">
-                            <li>Consultar</li>
-                        </a>
-                        <a href="/pages/Catalogo/CadastroCatalogo.html">
-                            <li>Cadastrar catálogo</li>
-                        </a>
-                    </ul>
-                </li>
-                <li class="menu_item pedido">
-                    <div class="menu_botao pedido">
-                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png">
-                        <p>Pedidos</p>
-                        <img class="menu_vector" src="/assets/menu/vector.png">
-                    </div>
-                    <ul class="menu_options">
-                        <a href="ListagemPedido.html">
-                            <li>Consultar</li>
-                        </a>
-                        <a href="CadastroPedido.html">
-                            <li>Realizar pedido</li>
-                        </a>
-                    </ul>
                 </li>
                 <li class="menu_item fornecedor">
                     <div class="menu_botao fornecedor">
@@ -124,182 +90,108 @@
                         </a>
                     </ul>
                 </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png">
+                        <p>Catálogos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Catalogo/ListagemCatalogo.html">
+                            <li>Consultar</li>
+                        </a>
+                        <a href="/pages/Catalogo/CadastroCatalogo.html">
+                            <li>Cadastrar catálogo</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png">
+                        <p>Pedidos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="ListagemPedido.html">
+                            <li>Consultar</li>
+                        </a>
+                        <a href="CadastroPedido.html">
+                            <li>Realizar pedido</li>
+                        </a>
+                    </ul>
+                </li>
             </ul>
             <a href="/Index.html" class="botao_sair">Encerrar</a>
         </nav>
-        <div class="botao_voltar">
-            <a href="CadastroPedido2.html"><img  src="/assets/icons/seta-voltar.png"></a>
-        </div>
+
         <section class="geral">
             <img class="timeline" src="/assets/timeline_pedido3.png" alt="timeline passo 2" />
-            <div class="titulo_geral">
-                <h1>Confirmar Pedido - <span>0001</span></h1>
-            </div>
-                    <div class="cabecalho">
-                        <div class="titulo_cabecalho">
-                            <h1>Cabeçalho</h1>
-                            <hr />
-                        </div>
-                        <div class="cabecalho-cliente">
-                            <h2>Cliente</h2>
-                            <div class="cabecalho-cliente-info">
-                                <div class="cabecalho-A">
-                                    <p><strong>Razão Social: </strong>TechNova Solutions</p>
-                                    <p><strong>CNPJ: </strong>18.345.678/0190-00</p>
-                                    <p><strong>Nome Contato: </strong>Keven Abraham</p>
-                                    <p><strong>Email: </strong>abraham@technova.com.br</p>
-                                    <p><strong>Telefone: </strong>11 96969-6969</p>
-                                </div>
-                                <div class="cabecalho-B">
-                                    <p><strong>CEP: </strong>03386-040</p>
-                                    <div class="cabecalho-endereco">
-                                        <p><strong>Logradouro: </strong>Rua Pedroso </p>
-                                        <p><strong> | Número: </strong>407</p>
-                                    </div>
-                                    <p><strong>Complemento: </strong>Sobre Loja</p>
-                                    <p><strong>Bairro: </strong>Bela Vista</p>
-                                    <div class="cabecalho-endereco">
-                                        <p><strong>Cidade: </strong>São Paulo </p>
-                                        <p><strong>| UF: </strong>SP</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cabecalho-fornecedor">
-                            <h2>Fornecedor</h2>
-                            <div class="cabecalho-fornecedor-info">
-                                <div class="cabecalho-A">
-                                    <p><strong>Razão Social: </strong>TechNova Solutions</p>
-                                    <p><strong>CNPJ: </strong>18.345.678/0190-00</p>
-                                    <p><strong>Nome Contato: </strong>Keven Abraham</p>
-                                    <p><strong>Email: </strong>abraham@technova.com.br</p>
-                                    <p><strong>Telefone: </strong>11 96969-6969</p>
-                                </div>
-                                <div class="cabecalho-B">
-                                    <p><strong>CEP: </strong>03386-040</p>
-                                    <div class="cabecalho-endereco">
-                                        <p><strong>Logradouro: </strong>Rua Pedroso </p>
-                                        <p><strong>| Número: </strong>407</p>
-                                    </div>
-                                    <p><strong>Complemento: </strong>Sobre Loja</p>
-                                    <p><strong>Bairro: </strong>Bela Vista</p>
-                                    <div class="cabecalho-endereco">
-                                        <p><strong>Cidade: </strong>São Paulo </p>
-                                        <p><strong>| UF: </strong>SP</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="itens_pedido">
-                        <div class="listagem_tabela">
-                            <table id="listar_fornecedor" class="display" style="width: 100%;">
-                                <h1>Itens do Pedido</h1>
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>Tipo</th>
-                                        <th>Item</th>
-                                        <th>Quantidade</th>
-                                        <th>Valor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <img src="/assets/icons/excluir.png" alt="icone de lixo">
-                                        </td>
-                                        <td>Serviço</td>
-                                        <td>Instalação WI-FI Residencial</td>
-                                        <td>
-                                            <input type="text" value="1" />
-                                        </td>
-                                        <td>R$ 150,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/assets/icons/excluir.png" alt="icone de lixo">
-                                        </td>
-                                        <td>Serviço</td>
-                                        <td>Limpeza de Virus e Malware</td>
-                                        <td>
-                                            <input type="text" value="1" />
-                                        </td>
-                                        <td>R$ 100,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/assets/icons/excluir.png" alt="icone de lixo">
-                                        </td>
-                                        <td>Serviço</td>
-                                        <td>Cons. em Segurança Cibernética</td>
-                                        <td>
-                                            <input type="text" value="1" />
-                                        </td>
-                                        <td>R$ 600,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/assets/icons/excluir.png" alt="icone de lixo">
-                                        </td>
-                                        <td>Serviço</td>
-                                        <td>Cons. em Segurança Cibernética</td>
-                                        <td>
-                                            <input type="text" value="1" />
-                                        </td>
-                                        <td>R$ 600,00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- <a href="CadastroPedido2.html" class="back_button">
-                            <img src="/assets/icons/back.png" alt="botao para avancar" />
-                        </a> -->
-                    </div>
-                <div class="total">
-                    <div class="titulo_total">
-                        <h1>Resumo do Pedido</h1>
-                        <hr />
-                    </div>
-                    <div class="info_resumo">
-                        <h3>Catálogo: <span>Serviços Sudeste</span></h3>
-                        <div class="valores">
-                            <div class="valor_produto">
-                                <p>Produtos (<span>0</span>)</p>
-                                <p>R$ 00,00</p>
-                            </div>
-                            <div class="valor_servico">
-                                <p>Serviços (<span>3</span>)</p>
-                                <p>R$850,00</p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="valor_total">
-                            <h2>Valor Total: </h2>
-                            <h2>R$ 850,00</h2>
-                        </div>
-                    </div>
-                    <a href="CadastroPedido4.html" class="botao_confirmar">Confirmar</a>
+            <div class="cabecalho">
+                <div class="titulo_cabecalho">
+                    <h1>Confirme as informações de compra e venda</h1>
+                    <hr />
                 </div>
+                <div class="cabecalho-cliente">
+                    <h2>Cliente</h2>
+                    <div class="cabecalho-cliente-info">
+                        <div class="cabecalho-A">
+                            <p><strong>Razão Social: </strong>TechNova Solutions</p>
+                            <p><strong>CNPJ: </strong>18.345.678/0190-00</p>
+                            <p><strong>Nome Contato: </strong>Keven Abraham</p>
+                            <p><strong>Email: </strong>abraham@technova.com.br</p>
+                            <p><strong>Telefone: </strong>11 96969-6969</p>
+                        </div>
+                        <div class="cabecalho-B">
+                            <p><strong>CEP: </strong>01322-010</p>
+                            <div class="cabecalho-endereco">
+                                <p><strong>Logradouro: </strong>Rua Pedroso </p>
+                                <p><strong> | Número: </strong>407</p>
+                            </div>
+                            <p><strong>Complemento: </strong>Sobre Loja</p>
+                            <p><strong>Bairro: </strong>Bela Vista</p>
+                            <div class="cabecalho-endereco">
+                                <p><strong>Cidade: </strong>São Paulo </p>
+                                <p><strong>| UF: </strong>SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabecalho-fornecedor">
+                    <h2>Fornecedor</h2>
+                    <div class="cabecalho-fornecedor-info">
+                        <div class="cabecalho-A">
+                            <p><strong>Razão Social: </strong>EcoSync Ventures</p>
+                            <p><strong>CNPJ: </strong>13.345.678/0190-00</p>
+                            <p><strong>Nome Contato: </strong>Alfredo Neves</p>
+                            <p><strong>Email: </strong>alfredon@ecosync.com.br</p>
+                            <p><strong>Telefone: </strong>11 99999-9999</p>
+                        </div>
+                        <div class="cabecalho-B">
+                            <p><strong>CEP: </strong>03386-040</p>
+                            <div class="cabecalho-endereco">
+                                <p><strong>Logradouro: </strong>Rua Pedro Aguiar </p>
+                                <p><strong>| Número: </strong>211</p>
+                            </div>
+                            <p><strong>Complemento: </strong>Sala 04</p>
+                            <p><strong>Bairro: </strong>Jardim Colorado</p>
+                            <div class="cabecalho-endereco">
+                                <p><strong>Cidade: </strong>São Paulo </p>
+                                <p><strong>| UF: </strong>SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <a href="CadastroPedido2.html" class="back_button">
+                        <img src="/assets/icons/back.png" alt="botao para avancar" />
+                    </a>
+                    <a href="CadastroPedido4.html" class="next_button">
+                        <img src="/assets/icons/next.png" alt="botao para avancar" />
+                    </a>
+                </div>
+            </div>
         </section>
         <script src="/js/home.js"></script>
-        <script>
-            // Configuração DataTable
-            var table = new DataTable('#listar_fornecedor', {
-                searching: false,
-                lengthMenu: [4],
-                paging: true,
-                ordering: false,
-                language: {
-                    lengthMenu: '',
-                    info: 'Página _PAGE_ de _PAGES_',
-                    sEmptyTable: 'Não há registros',
-                    searchPlaceholder: 'Busca fácil',
-                    sInfoEmpty: '',
-                    search: 'Filtrar: ',
-                },
-            });
-        </script>
     </main>
 </body>
 

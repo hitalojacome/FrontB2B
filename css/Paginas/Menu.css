@@ -108,7 +108,7 @@
     }
 
     .WSLogo {
-        width: 12%;
+        width: 10%;
     }
 
     .menu_options li, .menu_options li a {
@@ -117,6 +117,7 @@
     }
 
     .botao_sair {
+        width: 6%;
         bottom: 2em;
     }
 }

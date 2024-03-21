@@ -79,7 +79,7 @@ main {
     border: 3px solid #fff;
     width: 50em;
     height: 23.5em;
-    margin-top: 1em;
+    margin-top: .1em;
 }
 
 .listagem_tabela h1 {
@@ -91,7 +91,7 @@ main {
 .next_button {
     background-color: var(--cor-secundaria);
     padding: .6em .7em;
-    border-radius: 100px;
+    border-radius: 50%;
     border: none;
 }
 
