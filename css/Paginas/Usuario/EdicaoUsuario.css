@@ -17,7 +17,7 @@ main {
 }
 
 .botao_voltar img:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: .4s;
 }
 
@@ -25,7 +25,7 @@ main {
     background-color: var(--principal-rgba);
     color: var(--cor-fontebranca);
     height: 30em;
-    width: 55em;
+    width: 50em;
     padding: 1.5em 2em .5em 2em;
     align-items: center;
     margin: auto;
@@ -54,7 +54,7 @@ main {
     padding: 2em 2em 0 2em;
     border: 3px solid #fff;
     border-radius: 20px;
-    width: 50em;
+    width: 100%;
     height: 19em;
     margin-top: 2em;
     display: flex;
@@ -90,6 +90,10 @@ main {
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
+}
+
+#email {
+    margin-left: .2em;
 }
 
 /* Aqui comença o Toggler On/Off */
@@ -170,7 +174,7 @@ main {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-95%, -50%);
+    transform: translate(-100%, -50%);
 }
 
 .switch > .hidden-toggle:checked ~ .slider > .button img.toggle-icon {
@@ -199,7 +203,7 @@ main {
     transition: .4s;
     text-decoration: none;
     padding: 0.5em;
-    width: 15%;
+    width: 20%;
     padding-left: 1.3em;
 }
 

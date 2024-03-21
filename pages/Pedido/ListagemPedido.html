@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/Paginas/Fornecedor/ListagemFornecedor.css" class="text/css">
+    <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
+
+    <!--DataTables-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
+    <title>Catálogo B2B</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <img class="WSLogo" src="/assets/WSLogo.png">
+            <ul class="menu">
+                <li class="menu_home">
+                    <a href="../Home.html" class="menu_botao home">
+                        <img class="menu_logo-home" src="/assets/menu/Home-logo.png"><p>Home</p>
+                    </a>
+                </li>
+                <li class="menu_usuario">
+                    <a href="/pages/Usuario/ListagemUsuario.html" class="menu_botao usuario">
+                        <img class="menu_logo usuario" src="/assets/menu/User-logo.png"><p>Usuários</p>
+                    </a>
+                </li>
+                <li class="menu_item fornecedor">
+                    <div class="menu_botao fornecedor">
+                        <img class="menu_logo fornecedor" src="/assets/menu/Fornecedor-logo.png"><p>Fornecedores</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="ListagemFornecedor.html"><li>Consultar</li></a>
+                        <a href="CadastroFornecedor.html"><li>Cadastrar fornecedor</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item cliente">
+                    <div class="menu_botao cliente">
+                        <img class="menu_logo cliente" src="/assets/menu/Cliente-logo.png"><p>Clientes</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Cliente/ListagemCliente.html"><li>Consultar</li></a>
+                        <a href="/pages/Cliente/CadastroCliente.html"><li>Cadastrar cliente</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item categoria">
+                    <div class="menu_botao categoria">
+                        <img class="menu_logo categoria" src="/assets/menu/Categoria-logo.png"><p>Categorias</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Categoria/ListagemCategoria.html"><li>Consultar</li></a>
+                        <a href="/pages/Categoria/CadastroCategoria.html"><li>Cadastrar categoria</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item item">
+                    <div class="menu_botao item">
+                        <img class="menu_logo item" src="/assets/menu/Item-logo.png"><p>Itens</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Item/ListagemItem.html"><li>Consultar</li></a>
+                        <a href="/pages/Item/CadastroItem.html"><li>Cadastrar item</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item catalogo">
+                    <div class="menu_botao catalogo">
+                        <img class="menu_logo catalogo" src="/assets/menu/Catalogo-logo.png"><p>Catálogos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Catalogo/ListagemCatalogo.html"><li>Consultar</li></a>
+                        <a href="/pages/Catalogo/CadastroCatalogo.html"><li>Cadastrar catálogo</li></a>
+                    </ul>
+                </li>
+                <li class="menu_item pedido">
+                    <div class="menu_botao pedido">
+                        <img class="menu_logo pedido" src="/assets/menu/Pedido-logo.png"><p>Pedidos</p>
+                        <img class="menu_vector" src="/assets/menu/vector.png">
+                    </div>
+                    <ul class="menu_options">
+                        <a href="/pages/Pedido/ListagemPedido.html"><li>Consultar</li></a>
+                        <a href="/pages/Pedido/CadastroPedido.html"><li>Realizar pedido</li></a>
+                    </ul>
+                </li>
+            </ul>
+            <a href="/Index.html" class="botao_sair">Encerrar</a>
+        </nav>
+
+        <section class="listagem">
+        <div class="titulo_listagem">
+            <h1>Pedidos</h1>
+            <hr/>
+        </div>
+        <div class="listagem_tabela">
+            <table id="listar_fornecedor" class="display" style="width: 100%;">
+                <a href="CadastroFornecedor.html" class="botao_novo">+ Adicionar Fornecedor</a>
+                <thead>
+                    <tr>
+                        <th>CNPJ</th>
+                        <th>Fornecedor</th>
+                        <th>Status</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11.346.678/0190-00</td>
+                        <td>Empresa LTDA</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12.346.678/0190-00</td>
+                        <td>NexusData Labs</td>
+                        <td>Inativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.346.678/0190-00</td>
+                        <td>EcoSync Ventures</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14.346.678/0190-00</td>
+                        <td>QuantumCraft Innovations</td>
+                        <td>Inativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15.346.678/0190-00</td>
+                        <td>BioHarbor Dynamics</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16.346.678/0190-00</td>
+                        <td>TechInnovate Solutions</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17.346.678/0190-00</td>
+                        <td>SolarEra Technologies</td>
+                        <td>Inativo</td>
+                        <td>
+                            <a href="EdicaoFornecedor.html" class="botao_expandir">Expandir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+
+        <script src="/js/home.js"></script> <!--Efeito MENU-->
+
+        <script> 
+            // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: true,
+                lengthMenu: [5],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    sEmptyTable: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    sInfoEmpty: '',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
+
+    </main>
+</body>
+</html>

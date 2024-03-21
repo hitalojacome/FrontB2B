@@ -91,7 +91,7 @@ main {
 }
 
 .back_button, .next_button {
-    background-color: var(--cor-websalmao);
+    /* background-color: var(--cor-websalmao); */
     padding: 1.3em;
     border-radius: 50px;
 }

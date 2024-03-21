@@ -50,7 +50,7 @@ main {
     margin-top: 1em;
 }
 
-#botao_novoUsuario {
+#botao_novo {
     position: fixed;
     background-color: var(--cor-secundaria);
     color: var(--cor-fontebranca);
@@ -65,7 +65,7 @@ main {
     transition: .4s;
 }
 
-#botao_novoUsuario:hover {
+#botao_novo:hover {
     background-color: var(--cor-webazul);
     transition: .4s;
 }
@@ -88,10 +88,17 @@ table img {
     display: none;
     background-color: var(--cor-fundo-rgba);
     border-radius: 20px;
-    width: 64.3%;
-    height: 73%;
-    top: 104px;
+    width: 59%;
+    height: 73.5%;
+    top: 101px;
     margin: auto;
+}
+
+#sair {
+    position: fixed;
+    right: 15em;
+    top: 8em;
+    cursor: pointer;
 }
 
 .cadastro_usuario {
@@ -142,6 +149,10 @@ table img {
     height: 2.8em;
     font-size: 16px;
     padding-left: .8em;
+}
+
+#email {
+    margin-left: .3em;
 }
 
 .botao_salvar {

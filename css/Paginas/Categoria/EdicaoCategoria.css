@@ -3,6 +3,7 @@
 
 main {
     background-image: url(/assets/Fundo.png);
+    color: var(--cor-fontebranca);
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -12,19 +13,19 @@ main {
 .botao_voltar {
     position: absolute;
     margin-bottom: 40em;
-    margin-left: 15em;
+    margin-left: 18em;
     transition: .4s;
 }
 
 .botao_voltar img:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: .4s;
 }
 
 .formulario {
     background-color: var(--principal-rgba);
-    width: 30em;
-    height: 20em;
+    width: 33em;
+    height: 24em;
     padding: 1.5em 2em;
     align-items: center;
     margin: auto;
@@ -64,12 +65,16 @@ main {
 }
 
 .edicao {
-    color: var(--cor-fontebranca);
-    width: 100%;
-    height: 80%;
+    background-color: var(--cor-principal);
+    border: 3px solid #fff;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
+    height: 19em;
+    padding: 2em 2em 2em 2em;
 }
 
 .formulario_dados {

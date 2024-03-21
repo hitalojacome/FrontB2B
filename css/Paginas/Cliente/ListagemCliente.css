@@ -50,6 +50,27 @@ main {
     margin-top: 1em;
 }
 
+.botao_novo {
+    position: fixed;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fontebranca);
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    padding: .6em 1.2em;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: .2em 0 0 .5em;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.botao_novo:hover {
+    background-color: var(--cor-webazul);
+    transition: .4s;
+}
+
 @media screen and (min-width:1728px) {
     .listagem {
         width: 65em;
