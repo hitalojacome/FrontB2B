@@ -65,7 +65,7 @@ main {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
     border-radius: 20px;
-    width: 50em;
+    width: 100%;
     height: 25.1em;
     display: flex;
     flex-direction: column;

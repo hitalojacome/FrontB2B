@@ -68,6 +68,7 @@ main {
     width: 100%;
     padding: 1em;
 }
+
 .cabecalho-cliente h2, .cabecalho-fornecedor h2 {
     margin-bottom: .2em;
     margin-left: .5em;

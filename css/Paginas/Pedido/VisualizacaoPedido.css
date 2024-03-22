@@ -5,27 +5,55 @@
 main {
     background-image: url(/assets/Fundo.png);
     background-size: cover;
+    color: var(--cor-fontebranca);
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+}
+
+.WSLogo {
+    width: 73.4%;
+}
+
+.botao_sair {
+    width: 50%;
+}
+
+.botao_voltar {
+    position: absolute;
+    margin-bottom: 52em;
+    margin-left: 14.5em;
+    transition: .4s;
+}
+
+.botao_voltar img:hover {
+    scale: 1.1;
+    transition: .4s;
+}
+
 .listagem {
+    position: relative;
+    left: 21%;
     background-color: var(--principal-rgba);
-    height: 35em;
-    width: 55em;
-    padding: 1.5em 2em;
+    color: var(--cor-fontebranca);
+    width: 71em;
+    height: 62em;
+    padding: 1.5em 2em .5em 2em;
     align-items: center;
-    margin: auto;
+    margin-top: 1em;
     border-radius: 20px;
     border: 5px solid #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .titulo_listagem {
-    color: var(--cor-fontebranca);
     font-size: 23px;
     width: 100%;
     gap: 100px;
@@ -42,42 +70,89 @@ main {
     border-radius: 5px;
 }
 
-.listagem_tabela {
+.container {
     background-color: var(--cor-principal);
     border: 3px solid #fff;
+    border-radius: 20px;
     width: 100%;
-    height: 37em;
-    margin-top: 1em;
+    height: 54em;
+    display: flex;
+    flex-direction: column;
 }
 
-.botao_novo {
-    position: fixed;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-fontebranca);
-    box-sizing: border-box;
-    cursor: pointer;
-    border: none;
-    padding: .6em 1.2em;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 10px;
-    margin: .2em 0 0 .5em;
-    transition: .4s;
-    text-decoration: none;
+.listagem_tabela {
+    background-color: var(--cor-principal);
+    border: 3px solid var(--cor-fontebranca);
+    width: 40em;
+    height: auto;
+    margin: auto;
+    margin-top: 1.5em;
 }
 
-.botao_novo:hover {
-    background-color: var(--cor-webazul);
-    transition: .4s;
+.listagem_tabela h1 {
+    text-align: center;
+    margin-top: .5em;
+}
+
+.dt-length {
+    display: none;
+}
+
+.cabecalho {
+    border-top: 4px solid var(--cor-fontebranca);
+    font-size: 17px;
+    width: 100%;
+    height: 34em;
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+    padding-top: 1em;
+}
+
+.cabecalho-cliente, .cabecalho-fornecedor {
+    border: 4px solid var(--cor-fontebranca);
+    border-radius: 20px;
+}
+
+.cabecalho p {
+    padding: .2em 0;
+}
+
+.cabecalho-cliente h2, .cabecalho-fornecedor h2 {
+    margin: 0 0 .1em 7em;
+}
+
+.cabecalho-cliente-info, .cabecalho-fornecedor-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0 .6em;
+} 
+
+.cabecalho-endereco {
+    display: flex;
 }
 
 @media screen and (min-width:1728px) {
-    .listagem {
-        width: 65em;
-        height: 35em;
+    .botao_voltar {
+        margin-bottom: 55em;
+        margin-left: 23em;
     }
 
-    .listagem_tabela {
-        width: 60em;
+    .listagem {
+        left: 29%;
     }
+
+    .sidebar {
+        width: 18em;
+    }
+
+    .WSLogo {
+        width: 67%;
+    }
+
+    .botao_sair {
+        width: 50%;
+    }
+
 }
