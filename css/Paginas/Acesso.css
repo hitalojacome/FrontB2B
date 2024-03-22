@@ -79,8 +79,14 @@ main {
     .WSlogo {
         width: 10%;
     }
+
     .principal {
-        width: 29%;
-        height: 29%;
+        width: 27%;
+        height: 33%;
+    }
+
+    .botao_acessar {
+        width: 30%;
+        margin: 1.5em 0;
     }
 }
