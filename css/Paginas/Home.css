@@ -49,6 +49,7 @@ section {
     section {
         gap: 3em;
         width: 64%;
+        font-size: 18px;
     }
 
     .boas_vindas {

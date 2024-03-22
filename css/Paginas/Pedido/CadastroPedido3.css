@@ -1,13 +1,14 @@
 @import url(/css/Style.css);
 @import url(/css/Paginas/Menu.css);
+@import url(/css/datatables.css);
 
 main {
     background-image: url(/assets/Fundo.png);
-    color: var(--cor-fontebranca);
     background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: var(--cor-fontebranca);
 }
 
 .geral {
@@ -22,16 +23,32 @@ main {
     margin: auto;
 }
 
-.titulo_geral {
+.cadastro {
     background-color: var(--principal-rgba);
-    padding: .5em 2em;
-    border: 5px solid var(--cor-fontebranca);
-    border-radius: 20px;
-    font-size: 20px;
+    width: 55em;
+    height: 41em;
+    padding: 1.5em 2em .4em 2em;
+    align-items: center;
     margin: auto;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.geral hr {
+.titulo_cadastro {
+    color: var(--cor-fontebranca);
+    font-size: 23px;
+    width: 100%;
+    gap: 100px;
+}
+
+.titulo_cadastro h1 {
+    padding: .1em;
+}
+
+.cadastro hr {
     border-width: 0.1em;
     border-color: var(--cor-fontebranca);
     border-style: solid;
@@ -39,55 +56,37 @@ main {
 }
 
 .cabecalho {
-    background-color: var(--principal-rgba);
-    font-size: 17px;
-    border: 5px solid var(--cor-fontebranca);
-    border-radius: 20px;
-    width: 100%;
-    height: 34em;
     display: flex;
-    flex-direction: column;
-    gap: .5em;
-    padding: 1em 2em .5em 2em;
+    text-align: center;
+    gap: 2em;
+    padding: .5em 0;
 }
 
-.titulo_cabecalho {
-    width: 100%;
-    gap: 100px;
-    font-size: 23px;
-}
-
-.cabecalho p {
-    padding: .2em 0;
-}
-
-.cabecalho-cliente, .cabecalho-fornecedor {
+.listagem_tabela {
     background-color: var(--cor-principal);
-    border: 2px solid var(--cor-fontebranca);
-    border-radius: 20px;
-    width: 100%;
-    padding: 1em;
+    border: 3px solid #fff;
+    width: 50em;
+    height: 25em;
+    margin-top: .1em;
 }
 
-.cabecalho-cliente h2, .cabecalho-fornecedor h2 {
-    margin-bottom: .2em;
-    margin-left: .5em;
+.listagem_tabela h1 {
+    text-align: center;
+    padding: .3em 0;
+    border-bottom: 3px solid var(--cor-fontebranca);
 }
 
-.cabecalho-cliente-info, .cabecalho-fornecedor-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 .6em;
-}
-
-.cabecalho-endereco {
-    display: flex;
+.listagem_tabela tr input {
+    border-radius: 0;
+    padding: .5em;
+    text-align: center;
+    width: 8em;
 }
 
 .botoes {
     display: flex;
-    gap: 35em;
-    padding: 0;
+    gap: 40em;
+    padding: 0 2em 0 2em;
     align-items: center;
 }
 
@@ -105,16 +104,20 @@ main {
 
 @media screen and (min-width:1728px) {
     .timeline {
-        margin-bottom: 2em;
+        margin-top: 3.4em;
     }
 
-    .cabecalho {
-        height: 36em;
-        gap: 1em;
-        margin-bottom: 5.1em;
+    .cadastro {
+        height: 44em;
+        margin-bottom: 5em;
+        justify-content: space-between;
+    }
+
+    .listagem_tabela {
+        height: 25em;
     }
 
     .botoes {
-        gap: 38em;
+        margin-bottom: 1em;
     }
 }

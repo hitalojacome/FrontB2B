@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/css/Paginas/Pedido/CadastroPedido3.css" class="text/css">
     <link rel="shortcut icon" href="/assets/WSLogo.png" type="image/x-icon">
 
+    <!--DataTables-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
     <title>Catálogo B2B</title>
 </head>
 
@@ -126,60 +130,103 @@
 
         <section class="geral">
             <img class="timeline" src="/assets/timeline_pedido3.png" alt="timeline passo 2" />
-            <div class="cabecalho">
-                <div class="titulo_cabecalho">
-                    <h1>Confirme as informações de compra e venda</h1>
+            <div class="cadastro">
+                <div class="titulo_cadastro">
+                    <h1>Pedido - <span>0001</span></h1>
                     <hr />
                 </div>
-                <div class="cabecalho-cliente">
-                    <h2>Cliente</h2>
-                    <div class="cabecalho-cliente-info">
-                        <div class="cabecalho-A">
-                            <p><strong>Razão Social: </strong>TechNova Solutions</p>
-                            <p><strong>CNPJ: </strong>18.345.678/0190-00</p>
-                            <p><strong>Nome Contato: </strong>Keven Abraham</p>
-                            <p><strong>Email: </strong>abraham@technova.com.br</p>
-                            <p><strong>Telefone: </strong>11 96969-6969</p>
-                        </div>
-                        <div class="cabecalho-B">
-                            <p><strong>CEP: </strong>01322-010</p>
-                            <div class="cabecalho-endereco">
-                                <p><strong>Logradouro: </strong>Rua Pedroso </p>
-                                <p><strong> | Número: </strong>407</p>
-                            </div>
-                            <p><strong>Complemento: </strong>Sobre Loja</p>
-                            <p><strong>Bairro: </strong>Bela Vista</p>
-                            <div class="cabecalho-endereco">
-                                <p><strong>Cidade: </strong>São Paulo </p>
-                                <p><strong>| UF: </strong>SP</p>
-                            </div>
-                        </div>
+                <div class="cabecalho">
+                    <div class="cabecalho_cliente">
+                        <h2>Cliente</h2>
+                        <h3>TechNova Solutions</h3>
+                    </div>
+                    <div class="cabecalho_catalogo">
+                        <h2>Catálogo</h2>
+                        <h3>Serviços Sudeste</h3>
+                    </div>
+                    <div class="cabecalho_fornecedor">
+                        <h2>Fornecedor</h2>
+                        <h3>EcoSync Ventures</h3>
                     </div>
                 </div>
-                <div class="cabecalho-fornecedor">
-                    <h2>Fornecedor</h2>
-                    <div class="cabecalho-fornecedor-info">
-                        <div class="cabecalho-A">
-                            <p><strong>Razão Social: </strong>EcoSync Ventures</p>
-                            <p><strong>CNPJ: </strong>13.345.678/0190-00</p>
-                            <p><strong>Nome Contato: </strong>Alfredo Neves</p>
-                            <p><strong>Email: </strong>alfredon@ecosync.com.br</p>
-                            <p><strong>Telefone: </strong>11 99999-9999</p>
-                        </div>
-                        <div class="cabecalho-B">
-                            <p><strong>CEP: </strong>03386-040</p>
-                            <div class="cabecalho-endereco">
-                                <p><strong>Logradouro: </strong>Rua Pedro Aguiar </p>
-                                <p><strong>| Número: </strong>211</p>
-                            </div>
-                            <p><strong>Complemento: </strong>Sala 04</p>
-                            <p><strong>Bairro: </strong>Jardim Colorado</p>
-                            <div class="cabecalho-endereco">
-                                <p><strong>Cidade: </strong>São Paulo </p>
-                                <p><strong>| UF: </strong>SP</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="listagem_tabela">
+                    <table id="listar_fornecedor" class="display" style="width: 100%;">
+                        <h1>Insira os itens ao Pedido</h1>
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Item</th>
+                                <th>Categoria</th>
+                                <th>Valor</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Instalação WI-FI Residencial</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Limpeza de Virus e Malware</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Conf. de Segurança de Rede</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Backup e Recuperação de Dados</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Manutenção Preventiva de Rede</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Otimização de Servidores</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serviço</td>
+                                <td>Cons. em Segurança Cibernética</td>
+                                <td>Tecnologia</td>
+                                <td>R$ 100,00</td>
+                                <td>
+                                    <input type="text" placeholder="0" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="botoes">
                     <a href="CadastroPedido2.html" class="back_button">
@@ -192,6 +239,23 @@
             </div>
         </section>
         <script src="/js/home.js"></script>
+        <script>
+            // Configuração DataTable
+            var table = new DataTable('#listar_fornecedor', {
+                searching: true,
+                lengthMenu: [3],
+                paging: true,
+                ordering: false,
+                language: {
+                    lengthMenu: '',
+                    info: 'Página _PAGE_ de _PAGES_',
+                    sEmptyTable: 'Não há registros',
+                    searchPlaceholder: 'Busca fácil',
+                    sInfoEmpty: '',
+                    search: 'Filtrar: ',
+                },
+            });
+        </script>
     </main>
 </body>
 
