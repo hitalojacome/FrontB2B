@@ -282,13 +282,17 @@ main {
 
 @media screen and (min-width:1728px) {
     .botao_voltar {
-        margin-bottom: 53em;
+        margin-bottom: 50em;
         margin-left: 23em;
     }
 
     .edicao {
         width: 65em;
         height: 40em;
+    }
+
+    .titulo_edicao div {
+        width: 48%;
     }
 
     .titulo_edicao h3 {
@@ -314,6 +318,18 @@ main {
         width: 44%
     }
 
+    #razao_social, #nome_contato, #logradouro, #numero {
+        width: 16.8em;
+    }
+
+    .toggle-wrapper {
+        width: 16em;
+    }
+    
+    #telefone, #email {
+        width: 18em;
+    }
+
     .cep_botao button {
         width: 33%;
     }
@@ -332,6 +348,6 @@ main {
 
     #cidade {
         width: 11em;
-        margin-left: 5em;
+        margin-left: 4.5em;
     }
 }

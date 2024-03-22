@@ -110,6 +110,7 @@ main {
     .cabecalho {
         height: 36em;
         gap: 1em;
+        margin-bottom: 5.1em;
     }
 
     .botoes {

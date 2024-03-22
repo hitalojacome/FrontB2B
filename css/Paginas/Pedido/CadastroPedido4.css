@@ -159,6 +159,11 @@ main {
 
 @media screen and (min-width:1728px) {
     .timeline {
-        margin-bottom: 8em;
+        margin-bottom: 2em;
+    }
+
+    .resumo {
+        gap: 5em;
+        margin-bottom: 9em;
     }
 }

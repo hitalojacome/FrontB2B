@@ -182,7 +182,7 @@ table img {
 @media screen and (min-width:1728px) {
     .listagem {
         width: 65em;
-        height: 37em;
+        height: 35em;
     }
 
     .listagem_tabela {
@@ -190,15 +190,19 @@ table img {
     }
 
     .modal {
-        width: 55.3%;
-        top: 192px;
-        height: 60.7%;
+        width: 55.4%;
+        top: 201px;
+        height: 60%;
+    }
+
+    #sair {
+        right: 21em;
+        top: 14.5em;
     }
     
     .cadastro_usuario {
         width: 50%;
         height: 73.5%;
-
     }
 
     .titulo_usuario {
@@ -208,7 +212,6 @@ table img {
     .cadastro_usuario-dados {
         margin-top: 1.5em;
     }
-
 
     .inputs {
         width: 90%;

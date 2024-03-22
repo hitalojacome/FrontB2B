@@ -166,9 +166,10 @@ main {
 
 @media screen and (min-width:1728px) {
     .botao_voltar {
-        margin-bottom: 53em;
+        margin-bottom: 50em;
         margin-left: 23em;
     }
+
     .formulario {
         width: 65em;
         height: 45em;
@@ -176,6 +177,10 @@ main {
 
     .titulo_formulario hr {
         border-width: .1em;
+    }
+
+    .edicao {
+        height: 40em;
     }
 
     .edicao input {

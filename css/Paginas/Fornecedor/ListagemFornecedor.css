@@ -44,7 +44,7 @@ main {
 
 .listagem_tabela {
     background-color: var(--cor-principal);
-    border: 3px solid #fff;
+    border: 3px solid var(--cor-fontebranca);
     width: 100%;
     height: 37em;
     margin-top: 1em;

@@ -85,7 +85,11 @@ table a:hover {
 
 @media screen and (min-width:1728px) {
     .listagem {
+        width: 65em;
         height: 35em;
-        width: 45em;
+    }
+
+    .listagem_tabela {
+        width: 60em;
     }
 } 
